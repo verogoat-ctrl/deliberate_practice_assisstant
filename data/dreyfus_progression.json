@@ -1,0 +1,1991 @@
+{
+  "title": "Skill Progression Framework",
+  "competencies": [
+    {
+      "competency_number": 1,
+      "competency_name": "PROBLEM SOLVING",
+      "skills": [
+        {
+          "skill_name": "Solves Problems | Leads Problem Solving",
+          "building_blocks": [
+            {
+              "id": "1.1",
+              "building_block": "Problem framing",
+              "description": "Diagnose the root cause of the problem.\nScope it appropriately before any solutioning.\nArticulate actionable objectives to guide the work.",
+              "consulting_example": "Problem-statement worksheet",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Accepts the problem as given by the client or project lead without questioning scope or root causes. Relies on templates to document the problem. May conflate symptoms with the actual problem and jump prematurely toward solutions.",
+                  "coaching_questions": [
+                    "Can you restate the problem in your own words, separate from how the client described it?",
+                    "What template or framework did you use to write the problem statement?",
+                    "How did you decide what was in scope versus out of scope?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Begins to notice when a stated problem may be too broad or too narrow, but needs guidance to reframe it. Can distinguish symptoms from causes in straightforward situations. Still defaults to the original framing when unsure.",
+                  "coaching_questions": [
+                    "Was there a moment when you felt the client's stated problem might not be the real problem? What did you do?",
+                    "Can you describe a time when you narrowed or broadened the scope of a problem? What triggered that decision?",
+                    "How do you decide when a problem statement is good enough to move forward?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Independently drafts a problem statement that separates root causes from symptoms and defines appropriate scope. Tests the framing against available evidence before moving forward. Recognises when objectives are vague and takes deliberate steps to sharpen them.",
+                  "coaching_questions": [
+                    "Walk me through how you arrived at this problem statement — what alternatives did you consider and reject?",
+                    "What evidence did you use to distinguish the root cause from the symptoms before framing the problem?",
+                    "How did you test whether your objectives were actionable and appropriately scoped?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Quickly senses when a problem is mis-scoped or politically framed and reframes it constructively without alienating stakeholders. Balances analytical rigour with organisational reality when setting objectives. Intuitively identifies the highest-leverage framing among several plausible alternatives.",
+                  "coaching_questions": [
+                    "Tell me about a time when you reframed a problem that stakeholders had already agreed on — how did you navigate that?",
+                    "How do you balance analytical precision in framing with the political realities of what stakeholders are willing to hear?",
+                    "When you have multiple plausible framings, what signals tell you which one has the highest leverage?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Fluidly reframes problems in real time as new information emerges, keeping the team and client aligned. Sees connections between the presenting problem and deeper systemic issues others miss. Problem framing itself becomes a strategic intervention that reshapes how the client thinks about the situation.",
+                  "coaching_questions": [
+                    "Can you describe a situation where your reframing of the problem fundamentally changed the client's understanding of their situation?",
+                    "How do you hold the presenting problem and the systemic issue in view simultaneously when framing?",
+                    "When has your problem framing itself served as a strategic intervention — not just a precursor to analysis?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.2",
+              "building_block": "Problem decomposition and structuring",
+              "description": "Enable a systematic and comprehensive analysis of all the elements of a complex issue.\nApproach complex issues by breaking them down into manageable parts.",
+              "consulting_example": "Issue tree / logic tree",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Follows a provided issue tree or decomposition template without modifying it. Struggles to identify whether categories are mutually exclusive or collectively exhaustive. Tends to list items rather than organise them hierarchically.",
+                  "coaching_questions": [
+                    "Are the branches of your issue tree mutually exclusive?",
+                    "Can you explain why you chose these particular categories to decompose the problem?",
+                    "How did you decide how many levels of decomposition were needed?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Can build a basic issue tree for familiar problem types, recognising when major branches are missing. Begins to apply MECE logic but still produces overlaps or gaps under complexity. Needs review to ensure the structure matches the actual problem, not just a textbook pattern.",
+                  "coaching_questions": [
+                    "Looking at your issue tree, can you identify any gaps where a branch might be missing?",
+                    "How did you check whether your structure is collectively exhaustive?",
+                    "When you built this decomposition, did you start from a template or from the specific problem? Why?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Designs fit-for-purpose issue trees that reflect the specific problem, not just generic frameworks. Deliberately checks for MECE compliance and adjusts the structure when gaps are found. Can decompose a moderately complex issue into two or three levels of workable sub-questions.",
+                  "coaching_questions": [
+                    "Why did you choose this particular decomposition logic over alternative ways of cutting the problem?",
+                    "How would you restructure this tree if a key assumption turned out to be wrong?",
+                    "At what point did you decide the decomposition was detailed enough to start analysis?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Restructures decompositions on the fly as the analysis reveals new dimensions or dead ends. Intuitively senses which branches of the tree will yield the most insight and prioritises accordingly. Adapts the decomposition approach to match the problem archetype — financial, operational, strategic.",
+                  "coaching_questions": [
+                    "Tell me about a time you restructured a decomposition mid-project — what triggered it and how did you manage the disruption?",
+                    "How do you decide which branches of the tree to prioritise when you cannot analyse everything?",
+                    "When have you switched between decomposition lenses — say, from causal to stakeholder-based — and why?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Creates novel structuring approaches for unprecedented problems that others then adopt as templates. Moves fluidly between multiple decomposition lenses — causal, temporal, stakeholder — choosing whichever illuminates the problem best. The structure itself becomes a communication tool that aligns diverse teams around a shared logic.",
+                  "coaching_questions": [
+                    "Can you describe a problem where no existing decomposition framework fit, and what you created instead?",
+                    "How do you use the structure itself as a communication and alignment tool with diverse stakeholders?",
+                    "When has your decomposition approach become a reusable template that others adopted?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.3",
+              "building_block": "Approach selection and planning",
+              "description": "Prioritize goals according to the highest alignment with the problem framing and impact aspiration.\nSelect a method to solve the problem that best matches the problem archetype.\nSurface the tasks, issues, or opportunities that require attention and choose how to address them. \nSequence steps, allocate resources, design contingencies, and make the approach explicit.",
+              "consulting_example": "Work plan / Gantt chart",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Follows a pre-set project plan or methodology without evaluating whether it fits the specific problem. Sequences tasks in the order received rather than by strategic priority. Requires step-by-step guidance on resource allocation and contingency planning.",
+                  "coaching_questions": [
+                    "Can you describe the approach you are following and why it was chosen?",
+                    "How did you decide the order in which to complete these tasks?",
+                    "What would you do if you fell behind on the timeline?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Recognises that different problems may require different approaches but defaults to the most familiar one. Can build a basic work plan with milestones when given clear direction. Begins to identify dependencies between tasks but may overlook critical-path items.",
+                  "coaching_questions": [
+                    "Were there alternative approaches you considered? Why did you go with this one?",
+                    "Can you identify the critical-path tasks in your plan — the ones where a delay would delay everything?",
+                    "How did you account for dependencies between workstreams?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Selects an approach by matching the problem archetype to an appropriate methodology and can articulate why. Builds a sequenced work plan that accounts for dependencies, resource constraints, and key decision points. Designs contingencies for the most likely risks and explicitly flags assumptions.",
+                  "coaching_questions": [
+                    "What criteria did you use to select this methodology over the alternatives, and how do those criteria connect to the problem archetype?",
+                    "Where in the plan have you built in contingencies, and what risks are they designed to address?",
+                    "How did you decide which tasks to front-load versus defer?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Rapidly assesses which approach will yield the best insight-to-effort ratio and adjusts the plan as conditions change. Balances analytical rigour with practical constraints like timeline, team capability, and client readiness. Intuitively front-loads the highest-uncertainty tasks to preserve strategic flexibility.",
+                  "coaching_questions": [
+                    "Tell me about a time you changed the approach mid-engagement — what did you see that told you the original plan would not work?",
+                    "How do you evaluate the insight-to-effort ratio of different analytical approaches before committing resources?",
+                    "When have you deliberately front-loaded uncertainty to preserve strategic flexibility later?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Designs bespoke approaches for novel problem types that become reference models for the firm. Orchestrates multiple parallel workstreams with an intuitive feel for when to converge or diverge. The planning process itself surfaces strategic choices that reframe the engagement's direction.",
+                  "coaching_questions": [
+                    "Describe a situation where you designed a novel approach for a problem type the firm had not encountered before.",
+                    "How do you orchestrate parallel workstreams so they converge at the right moment rather than creating redundancy?",
+                    "When has your planning process itself surfaced strategic choices that reframed the engagement?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.4",
+              "building_block": "Testing hypotheses",
+              "description": "Systematically formulate testable hypotheses that can be proven or disproven. \nCollect the relevant, valid evidence required to prove or disprove the hypothesis.",
+              "consulting_example": "Hypothesis-driven work planning",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "States hypotheses that are actually opinions or conclusions rather than testable propositions. Collects data without a clear hypothesis to test and struggles to distinguish confirming from disconfirming evidence. Needs explicit guidance on what constitutes a fair test.",
+                  "coaching_questions": [
+                    "Can you state your hypothesis in a way that could be proven false?",
+                    "What data would you need to disprove this hypothesis?",
+                    "How did you arrive at this hypothesis — was it based on evidence or intuition?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Formulates basic hypotheses for familiar problem types and identifies the most obvious data needed to test them. Begins to recognise when evidence disconfirms a hypothesis but may be slow to abandon it. Can follow a structured test plan but does not yet design one independently.",
+                  "coaching_questions": [
+                    "What is the difference between evidence that supports your hypothesis and evidence that would confirm it?",
+                    "Has any evidence so far contradicted your hypothesis? What did you do with it?",
+                    "Can you walk me through the test plan for this hypothesis — what are the specific steps?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Writes crisp, falsifiable hypotheses and designs test plans that specify what evidence would confirm or disconfirm each one. Actively seeks disconfirming evidence rather than only looking for support. Iterates hypotheses as early results come in, adjusting direction without losing momentum.",
+                  "coaching_questions": [
+                    "How did you prioritise which hypotheses to test first, and what was the rationale?",
+                    "What would it take for you to abandon this hypothesis — what is your kill criterion?",
+                    "How have you iterated on your hypotheses as early results came in?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Formulates hypotheses that cut to the core of the issue, saving significant analytical effort. Intuitively senses which hypotheses are most likely to be wrong and tests those first. Reads partial or ambiguous evidence accurately and adjusts the hypothesis tree in real time.",
+                  "coaching_questions": [
+                    "Tell me about a hypothesis you abandoned early because you sensed it was wrong before the data was complete — what tipped you off?",
+                    "How do you handle ambiguous evidence that neither clearly confirms nor disconfirms the hypothesis?",
+                    "When have you restructured the entire hypothesis tree mid-project based on partial findings?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Generates hypotheses that reframe the problem in ways that surprise clients and unlock new strategic options. Simultaneously holds competing hypotheses in mind and triangulates across fragmented evidence streams effortlessly. The hypothesis-testing process itself becomes a vehicle for client learning and alignment.",
+                  "coaching_questions": [
+                    "Describe a hypothesis you generated that fundamentally reframed the client's understanding of their problem.",
+                    "How do you hold multiple competing hypotheses simultaneously and decide when to converge?",
+                    "When has your hypothesis-testing process itself become a vehicle for building client alignment?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.5",
+              "building_block": "Bias mitigation",
+              "description": "Integrating diverse viewpoints while mitigating personal or group cognitive biases to enhance objectivity and inclusivity. \nActively seek diverse perspectives to surface blind spots and strengthen decision-making.",
+              "consulting_example": "Pre-mortem analysis",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Is unaware of personal cognitive biases or their effect on analysis. Accepts consensus views without questioning whether groupthink is at play. Treats the first plausible explanation as sufficient evidence for a conclusion.",
+                  "coaching_questions": [
+                    "Can you name the cognitive biases that might be affecting your analysis right now?",
+                    "How did you decide that your first explanation was the right one?",
+                    "Did anyone on the team disagree with the conclusion? What happened to that disagreement?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Recognises the names and definitions of common biases (confirmation, anchoring, availability) and can spot them retrospectively. Begins to invite dissenting opinions but does not yet systematically structure the process. May still default to the dominant view when under time pressure.",
+                  "coaching_questions": [
+                    "Can you give me an example of a time you recognised a bias in your own reasoning after the fact?",
+                    "How do you invite dissenting opinions in team discussions?",
+                    "When the team was under time pressure, how did you guard against anchoring on the first solution?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Proactively applies debiasing techniques — pre-mortems, red teams, devil's advocate — at appropriate stages of the project. Structures team discussions to surface dissent and ensure minority perspectives are heard. Monitors their own reasoning for anchoring or confirmation bias before finalising conclusions.",
+                  "coaching_questions": [
+                    "What specific debiasing techniques did you build into this project's process, and at what stages?",
+                    "How do you structure team discussions to ensure minority perspectives are heard, not just tolerated?",
+                    "Walk me through how you monitored your own reasoning for confirmation bias before finalising this conclusion."
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Reads group dynamics in real time and intervenes when conformity pressures are silencing useful dissent. Designs analytical processes that make bias harder to creep in, rather than relying on post-hoc checks. Balances the need for cognitive diversity with the need for decisiveness without paralysis.",
+                  "coaching_questions": [
+                    "Tell me about a time you intervened in a group discussion because you sensed conformity pressure was suppressing a useful perspective.",
+                    "How do you design analytical processes that make bias harder to introduce in the first place?",
+                    "When have you had to balance the need for cognitive diversity with the need for decisiveness?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Creates a team culture where bias mitigation is embedded in everyday working norms, not treated as a separate step. Detects subtle systemic biases — organisational, cultural, political — that shape the problem definition itself. Holds genuinely contradictory perspectives in productive tension, using the discomfort as a source of insight.",
+                  "coaching_questions": [
+                    "Describe how you have embedded bias-mitigation practices into team norms so they operate without your direct intervention.",
+                    "When have you detected a systemic bias — organisational, cultural, or political — that was shaping the problem definition itself?",
+                    "How do you hold genuinely contradictory perspectives in productive tension without resolving them prematurely?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.6",
+              "building_block": "Evidence collection and evaluation",
+              "description": "Find the most relevant evidence needed to prove or disprove a hypothesis.\nInclude only credible information in the analysis.\nDetermine how much information is sufficient to make a decision.",
+              "consulting_example": "Data request list / evidence log",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Collects whatever data is readily available without assessing its relevance or credibility. Cannot distinguish primary from secondary sources or recognise selection bias in a dataset. Tends to over-collect or under-collect because there is no clear standard for sufficiency.",
+                  "coaching_questions": [
+                    "How did you decide which data sources to use for this analysis?",
+                    "Can you distinguish between the primary and secondary sources in your evidence base?",
+                    "How will you know when you have collected enough data to move forward?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Identifies the most obvious data sources for a given hypothesis and can flag clearly unreliable information. Begins to evaluate source credibility but struggles with conflicting evidence. Recognises the concept of sufficiency but still asks for guidance on when to stop collecting.",
+                  "coaching_questions": [
+                    "What makes you confident that this source is credible?",
+                    "You have two sources that contradict each other — how are you resolving that?",
+                    "What gaps exist in your evidence base, and how do they affect your confidence in the conclusion?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Designs a targeted data collection plan tied to specific hypotheses, specifying what evidence would be decisive. Evaluates source credibility, identifies gaps and biases in data, and triangulates across multiple sources. Makes a deliberate judgment call on when enough evidence has been gathered to proceed with confidence.",
+                  "coaching_questions": [
+                    "Walk me through your data collection plan — how does each data source map to a specific hypothesis?",
+                    "How did you triangulate across sources to increase confidence in this finding?",
+                    "At what point did you decide you had enough evidence, and what was the judgment call behind that?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Rapidly identifies the minimum viable evidence needed and avoids over-engineering the data collection effort. Senses when a data source is systematically biased and adjusts the collection strategy accordingly. Weighs evidence intuitively, knowing when a single data point is more telling than a full dataset.",
+                  "coaching_questions": [
+                    "Tell me about a time you identified a systematic bias in a data source and adjusted your collection strategy.",
+                    "When has a single data point been more telling than an entire dataset — and how did you recognise that?",
+                    "How do you avoid over-engineering the evidence collection effort when a quick answer would suffice?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Treats the evidence landscape itself as a strategic variable — knowing what cannot be known is as valuable as what can. Identifies unconventional evidence sources that others overlook, unlocking insights from adjacent domains. Calibrates confidence levels with precision, communicating uncertainty as clearly as certainty.",
+                  "coaching_questions": [
+                    "Describe an engagement where you identified an unconventional evidence source that others overlooked — what led you to it?",
+                    "How do you communicate the boundaries of what can and cannot be known with the available evidence?",
+                    "When has your understanding of the evidence landscape itself become a strategic contribution to the engagement?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.7",
+              "building_block": "Adaptive strategy",
+              "description": "Respond to new information by reprioritizing tasks based on their expected impact, urgency, and resource requirements.\nMake informed trade-offs and decisions when time, information, or resources are limited.",
+              "consulting_example": "Risk-impact matrix / triage grid",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Sticks rigidly to the original plan even when new information suggests a change in direction. Struggles to reprioritise tasks when constraints shift and escalates all trade-off decisions upward. Treats changes to the plan as failures rather than as natural responses to emerging evidence.",
+                  "coaching_questions": [
+                    "Has anything changed since the original plan was made? How has that affected your work?",
+                    "If you had to drop one task from the plan today, which would it be and why?",
+                    "When something unexpected came up, who did you go to for guidance on what to do next?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Recognises when new information invalidates part of the plan and flags it to the team lead. Can reprioritise a short task list when given clear criteria but hesitates with ambiguous trade-offs. Begins to see plan changes as normal but still feels uncomfortable making them independently.",
+                  "coaching_questions": [
+                    "Can you describe a situation where new information made part of the plan obsolete? How did you respond?",
+                    "How do you decide which changes warrant a plan revision versus just pressing on?",
+                    "What criteria do you use to reprioritise tasks when multiple things shift at once?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Reprioritises the workstream proactively when new evidence shifts the expected value of different tasks. Makes informed trade-offs between thoroughness and speed, documenting the rationale for the choices made. Builds decision checkpoints into the plan so that course corrections happen by design, not by crisis.",
+                  "coaching_questions": [
+                    "Where in the plan have you built in explicit decision checkpoints, and what triggers a course correction at each?",
+                    "Walk me through a trade-off you made between thoroughness and speed — what was your rationale?",
+                    "How do you document and communicate plan changes so the team stays aligned?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Senses shifts in the project landscape — political, analytical, logistical — before they become obvious and adjusts pre-emptively. Balances competing priorities with an intuitive feel for which trade-offs the client and team can absorb. Turns unexpected constraints into strategic advantages by reframing the scope or approach.",
+                  "coaching_questions": [
+                    "Tell me about a time you sensed a shift in the project landscape before it was obvious and adjusted pre-emptively.",
+                    "When have you turned an unexpected constraint into a strategic advantage?",
+                    "How do you calibrate how much disruption the team and client can absorb from a mid-course change?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Operates with a fluid, real-time strategy that continuously absorbs new signals and recalibrates without losing coherence. Creates adaptive planning systems that the team can sustain even after the expert leaves the engagement. The ability to pivot becomes invisible — the team experiences it as steady, confident leadership rather than reactive change.",
+                  "coaching_questions": [
+                    "Describe an engagement where your ability to adapt in real time was the decisive factor in the outcome.",
+                    "How do you create adaptive planning systems that the team can sustain after you step back?",
+                    "When has your pivoting been so smooth that others experienced it as steady leadership rather than reactive change?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.8",
+              "building_block": "Solutioning",
+              "description": "Ideate, compare, and refine possible solution paths to solve the problem. \nIdentify leverage points, strategic opportunities, and potential solutions implied by the project framing. \nAssess feasibility, risks, and impact to choose among alternatives.",
+              "consulting_example": "Option-evaluation matrix",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Proposes the first workable idea without generating alternatives or evaluating feasibility. Struggles to distinguish a creative idea from a viable solution and does not assess implementation risk. Relies on the team lead to compare options and select a path forward.",
+                  "coaching_questions": [
+                    "How many solution options did you consider before landing on this one?",
+                    "What criteria did you use to evaluate whether this solution is feasible?",
+                    "Who decided this was the right solution, and how was that decision made?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Generates two or three solution options for familiar problem types and can list basic pros and cons. Begins to consider feasibility and risk but tends to favour the most familiar option regardless. Can refine a solution when given feedback but does not yet iterate proactively.",
+                  "coaching_questions": [
+                    "Can you list the pros and cons of each option you considered?",
+                    "What made you choose this option over the alternatives — was it familiarity, feasibility, or something else?",
+                    "How did you refine the solution after receiving feedback?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Systematically generates a range of options, evaluates them against explicit criteria (feasibility, impact, risk), and recommends a preferred path with rationale. Identifies leverage points and strategic opportunities that are implied by the problem framing. Iterates solutions through multiple rounds of refinement before finalising.",
+                  "coaching_questions": [
+                    "Walk me through the evaluation criteria you used to compare these options — how did you weight feasibility, impact, and risk?",
+                    "What leverage points or strategic opportunities did you identify that shaped the solution options?",
+                    "How many rounds of refinement did this solution go through, and what changed at each iteration?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Intuitively identifies the two or three options most worth exploring and avoids wasting effort on low-potential paths. Sees creative combinations — merging elements of different solutions — that are not obvious from a linear comparison. Assesses organisational readiness and political feasibility alongside analytical merit.",
+                  "coaching_questions": [
+                    "Tell me about a time you combined elements from different solution options to create something none of them offered alone.",
+                    "How do you assess organisational readiness and political feasibility alongside analytical merit when evaluating solutions?",
+                    "When have you deliberately killed a promising option early to focus effort on a higher-potential path?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Generates breakthrough solutions that redefine the option space and change what the client believes is possible. Holds the full system — technical, financial, human, political — in view simultaneously when designing solutions. Solutions are so well-matched to context that they feel inevitable in hindsight, though no one else saw them.",
+                  "coaching_questions": [
+                    "Describe a solution you generated that redefined the option space — something the client had not imagined was possible.",
+                    "How do you hold the full system — technical, financial, human, political — in view simultaneously when designing solutions?",
+                    "When has a solution you designed felt inevitable in hindsight, even though no one else saw it beforehand?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.9",
+              "building_block": "Insight synthesis",
+              "description": "Integrate diverse data and perspectives to form coherent, actionable insights that inform decisions.",
+              "consulting_example": "Synthesis pyramid / \"so-what\" test",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Summarises data without extracting meaning or identifying the \"so what.\" Lists findings in the order they were discovered rather than in a logic that builds toward a conclusion. Needs explicit prompting to connect data points into a coherent narrative.",
+                  "coaching_questions": [
+                    "What is the main takeaway from this analysis — the 'so what'?",
+                    "How did you decide the order in which to present your findings?",
+                    "Can you connect these two findings and explain what they mean together?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Identifies the most obvious insight from a dataset and can articulate it clearly. Begins to group related findings but may miss connections across different workstreams. Recognises when a synthesis is incomplete but needs guidance on how to fill the gaps.",
+                  "coaching_questions": [
+                    "What is the single most important insight from this workstream, and why does it matter?",
+                    "Are there findings from other workstreams that reinforce or contradict yours?",
+                    "What is missing from this synthesis — what would make it more complete?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Integrates findings from multiple data sources and workstreams into a coherent narrative with a clear \"so what.\" Distinguishes signal from noise deliberately and prioritises insights by their strategic relevance. Tests the synthesis against alternative explanations before presenting it as a conclusion.",
+                  "coaching_questions": [
+                    "How did you distinguish signal from noise when integrating findings from multiple sources?",
+                    "Walk me through how you prioritised these insights — why does this one lead and that one support?",
+                    "Did you test your synthesis against alternative explanations before finalising it?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Synthesises rapidly across diverse and even contradictory data, sensing patterns before they are fully visible in the evidence. Frames insights at the level of strategic implication rather than operational detail. Knows intuitively which pieces of evidence are load-bearing and which are supporting colour.",
+                  "coaching_questions": [
+                    "Tell me about a time you saw a pattern across diverse data before it was fully visible in the evidence.",
+                    "How do you decide which pieces of evidence are load-bearing versus supporting colour in a synthesis?",
+                    "When have you reframed an insight from operational detail to strategic implication mid-project?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Produces insights that fundamentally reframe the client's understanding of their situation or market. Synthesises across domains — competitive, organisational, financial, cultural — in a way that creates emergent meaning none of the parts would yield alone. The synthesis itself becomes the strategic contribution, not just a step toward the recommendation.",
+                  "coaching_questions": [
+                    "Describe an insight you produced that fundamentally changed the client's understanding of their situation.",
+                    "How do you synthesise across domains — competitive, organisational, financial, cultural — to create meaning none of the parts would yield alone?",
+                    "When has the synthesis itself been the strategic contribution, rather than just a step toward the recommendation?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.10",
+              "building_block": "Complex decision-making",
+              "description": "Making trade-offs and decisions when time, information, or resources are limited. \nChoosing a course of action when outcomes are probabilistic, information is incomplete, and waiting is also a choice. Proactively monitoring and managing risk. Holding others accountable as well.",
+              "consulting_example": "Decision-rights matrix (RACI/RAPID)",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Avoids making decisions without explicit instruction and escalates all ambiguity upward. Struggles to weigh competing factors and defaults to the option with the least perceived risk. Does not distinguish between reversible and irreversible decisions.",
+                  "coaching_questions": [
+                    "What factors did you consider when making this decision?",
+                    "Did you escalate this decision or make it yourself? Why?",
+                    "What is the risk if this decision turns out to be wrong?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Can make straightforward decisions when criteria are clear but freezes when multiple valid options compete. Begins to recognise that waiting is itself a decision with costs. Identifies major risks but does not yet systematically assess their probability or impact.",
+                  "coaching_questions": [
+                    "How did you weigh the competing factors in this decision?",
+                    "Was there a point where you considered waiting for more information? What made you decide to act or hold?",
+                    "Can you identify the biggest risk in this decision and how you assessed its probability?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Makes trade-off decisions under moderate uncertainty, documenting the rationale and the risks accepted. Distinguishes between decisions that need more data and decisions that need commitment. Proactively monitors key risks and holds others accountable for their decision-related responsibilities.",
+                  "coaching_questions": [
+                    "Walk me through the trade-offs you accepted in this decision and the rationale for each.",
+                    "How did you distinguish between decisions that needed more data and decisions that needed commitment?",
+                    "What accountability mechanisms did you put in place to monitor the risks of this decision?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Makes high-stakes decisions with incomplete information, calibrating confidence levels accurately. Intuitively senses which uncertainties matter most and focuses analytical effort there. Balances analytical rigour with decisiveness, knowing when further analysis will not change the decision.",
+                  "coaching_questions": [
+                    "Tell me about a high-stakes decision you made with incomplete information — how did you calibrate your confidence?",
+                    "How do you decide when further analysis will not change the decision and it is time to commit?",
+                    "When have you focused analytical effort on the one or two uncertainties that actually mattered, ignoring the rest?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Makes decisions that integrate analytical, political, emotional, and temporal dimensions simultaneously and effortlessly. Creates decision-making frameworks that help less experienced team members navigate ambiguity independently. Decisions feel obvious in retrospect but require extraordinary judgment in the moment, especially under competing stakeholder pressures.",
+                  "coaching_questions": [
+                    "Describe a decision that required you to integrate analytical, political, emotional, and temporal dimensions simultaneously.",
+                    "How have you created decision-making frameworks that helped less experienced team members navigate ambiguity independently?",
+                    "When has a decision you made felt obvious in retrospect but required extraordinary judgment at the time?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.11",
+              "building_block": "Outcome evaluation",
+              "description": "Assess whether the solution worked, whether it solved the right problem, and what to carry forward into future practice.",
+              "consulting_example": "After-action review (AAR)",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Evaluates outcomes only in terms of whether the deliverable was completed, not whether it solved the right problem. Does not revisit assumptions or process after a project ends. Attributes success or failure to surface-level factors without deeper analysis.",
+                  "coaching_questions": [
+                    "How did you determine whether this project was successful?",
+                    "What metrics did you use to evaluate the outcome?",
+                    "Did you revisit any of your original assumptions after the project ended?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Can assess whether a solution achieved its stated objectives and identify obvious shortfalls. Begins to reflect on the process — what worked, what did not — but does so informally. Recognises that unintended consequences exist but does not yet systematically look for them.",
+                  "coaching_questions": [
+                    "Beyond completing the deliverable, did the solution actually solve the client's problem? How do you know?",
+                    "What would you do differently if you ran this project again?",
+                    "Were there any unintended consequences — positive or negative — that you noticed after implementation?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Conducts a structured evaluation that assesses both the outcome and the process, identifying root causes of success or failure. Examines whether the original problem framing was correct in light of results. Extracts transferable lessons and documents them for future engagements.",
+                  "coaching_questions": [
+                    "Walk me through the structured evaluation you conducted — how did you assess both the outcome and the process?",
+                    "Did your evaluation reveal that the original problem framing was incorrect or incomplete? What did you learn?",
+                    "What transferable lessons did you extract, and how did you document them for future use?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Evaluates outcomes against a broader set of criteria — client impact, organisational change, team development — not just deliverable quality. Senses when a \"successful\" outcome actually masked a deeper unresolved issue. Uses evaluation insights to refine their own problem-solving approach going forward.",
+                  "coaching_questions": [
+                    "Tell me about a time when a project appeared successful on the surface but your evaluation uncovered a deeper unresolved issue.",
+                    "How do you evaluate outcomes against broader criteria — client impact, organisational change, team development — beyond just deliverable quality?",
+                    "How has your evaluation of past outcomes changed your own problem-solving approach?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Designs evaluation into the engagement from the start, building feedback loops that generate learning throughout, not just at the end. Recognises patterns across engagements that reveal systemic firm-level improvement opportunities. Transforms post-project reflection into a strategic capability that strengthens every subsequent engagement.",
+                  "coaching_questions": [
+                    "How do you design evaluation into an engagement from the start, rather than treating it as a post-project activity?",
+                    "Describe a pattern you recognised across multiple engagements that revealed a systemic improvement opportunity for the firm.",
+                    "When has your post-project reflection practice become a strategic capability that strengthened subsequent engagements?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.12",
+              "building_block": "Foresight",
+              "description": "Anticipate long-term implications, risks, and opportunities that enhance the strategic impact of recommendations.",
+              "consulting_example": "Scenario planning (e.g., 2×2 scenario matrix)",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Focuses entirely on the immediate problem without considering downstream consequences. Does not anticipate how recommendations might play out over time or across the organisation. Treats the future as a single expected outcome rather than a range of possibilities.",
+                  "coaching_questions": [
+                    "What might happen after this recommendation is implemented — have you thought beyond the immediate outcome?",
+                    "What assumptions are you making about the future, and how confident are you in them?",
+                    "Have you considered what could go wrong with this recommendation over the next twelve months?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Can identify one or two obvious risks or second-order effects when prompted. Begins to think about time horizons but tends to project current trends linearly. Recognises that uncertainty exists but does not yet structure thinking around multiple scenarios.",
+                  "coaching_questions": [
+                    "Can you identify one or two second-order effects of this recommendation?",
+                    "How would your recommendation change if a key external assumption — say, market growth — turned out to be wrong?",
+                    "What is the difference between a forecast and a scenario, and when would you use each?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Systematically identifies second- and third-order implications of recommendations before finalising them. Builds simple scenarios to stress-test assumptions and assess strategic robustness. Considers how market, regulatory, and competitive dynamics might evolve and adjusts recommendations accordingly.",
+                  "coaching_questions": [
+                    "What second- and third-order implications did you identify before finalising the recommendation?",
+                    "Walk me through the scenarios you built to stress-test this strategy — what variables did you choose and why?",
+                    "How did you factor in potential regulatory, competitive, or market shifts?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Intuitively senses which uncertainties will matter most and focuses foresight effort on those pivotal variables. Connects weak signals from adjacent industries or disciplines to anticipate shifts others miss. Frames recommendations so they are robust across a range of plausible futures rather than optimised for a single forecast.",
+                  "coaching_questions": [
+                    "Tell me about a time you identified a weak signal from an adjacent industry that changed your recommendation.",
+                    "How do you decide which uncertainties are pivotal enough to warrant scenario planning versus those you can ignore?",
+                    "How do you design recommendations that are robust across a range of futures rather than optimised for one forecast?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Sees the present through the lens of multiple possible futures simultaneously, identifying strategic options that create value regardless of which future materialises. Anticipates how the client's own actions will reshape the competitive landscape, thinking several moves ahead. Foresight is woven so deeply into the analysis that it is inseparable from the recommendation itself.",
+                  "coaching_questions": [
+                    "Describe a situation where you anticipated how the client's own actions would reshape the competitive landscape — thinking several moves ahead.",
+                    "How do you see the present through the lens of multiple possible futures simultaneously?",
+                    "When has your foresight been so deeply woven into the analysis that it was inseparable from the recommendation itself?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1.13",
+              "building_block": "Implementation planning",
+              "description": "Translate recommendations into actionable, sequenced implementation plans with defined success metrics and accountability.\nCarry the solution through to completion, adapting to the friction encountered along the way.",
+              "consulting_example": "Implementation roadmap with milestone tracker",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Produces a generic to-do list rather than a sequenced implementation plan. Does not define success metrics, assign accountability, or anticipate implementation barriers. Treats the recommendation as the end of the work rather than the beginning of change.",
+                  "coaching_questions": [
+                    "Can you list the key steps needed to implement this recommendation?",
+                    "Who is accountable for each step, and how will you know if a step is complete?",
+                    "What could go wrong during implementation, and do you have a plan for it?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Can translate a recommendation into a basic set of actions with timelines and owners. Recognises that implementation involves change management but does not yet plan for resistance. Identifies the most obvious dependencies but may miss cross-functional or political obstacles.",
+                  "coaching_questions": [
+                    "How did you decide the sequence of these implementation steps?",
+                    "What dependencies exist between tasks, and how are you managing them?",
+                    "Have you considered how people in the organisation might resist this change?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Builds a sequenced implementation plan with defined milestones, success metrics, accountability, and escalation paths. Anticipates likely sources of resistance and designs mitigation strategies. Adapts the plan based on early implementation feedback rather than waiting for a formal review.",
+                  "coaching_questions": [
+                    "Walk me through the milestones, success metrics, and escalation paths in your implementation plan.",
+                    "What sources of resistance did you anticipate, and what mitigation strategies did you design?",
+                    "How are you adapting the plan based on early implementation feedback?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Designs implementation plans that account for organisational culture, political dynamics, and capability gaps — not just tasks and timelines. Senses when a plan is technically correct but practically unworkable and adjusts before launching. Balances speed of execution with the need for stakeholder buy-in and sustainable adoption.",
+                  "coaching_questions": [
+                    "Tell me about an implementation plan that was technically correct but practically unworkable — how did you sense that and what did you change?",
+                    "How do you account for organisational culture, political dynamics, and capability gaps in the plan — not just tasks and timelines?",
+                    "When have you had to balance speed of execution with the need for stakeholder buy-in?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Creates implementation architectures that build the client's internal capability to manage change independently. Anticipates how the act of implementing will change the conditions, and designs adaptive plans accordingly. Implementation becomes a seamless extension of the strategic work, with the transition from advisory to action feeling natural and inevitable.",
+                  "coaching_questions": [
+                    "Describe how you have designed an implementation that built the client's internal capability to manage change independently.",
+                    "How do you anticipate that the act of implementing will change the conditions, and how do you plan for that?",
+                    "When has the transition from advisory to action felt seamless — and what did you do to make it that way?"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "competency_number": 2,
+      "competency_name": "COMMUNICATION",
+      "skills": [
+        {
+          "skill_name": "Communicates Effectively | Creates Compelling Communications",
+          "building_blocks": [
+            {
+              "id": "2.1",
+              "building_block": "Audience evaluation",
+              "description": "Recognize the knowledge, values, motivations, emotional state, and decision authority of the audience before and during the communication act. \nAnticipate the audience’s expectations, priorities, and context.",
+              "consulting_example": "Stakeholder analysis map",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Prepares the same message regardless of who will receive it. Does not consider the audience's prior knowledge, decision authority, or emotional state. Relies on assumptions about the audience rather than actively assessing them.",
+                  "coaching_questions": [
+                    "Who is the audience for this communication, and what do they already know about the topic?",
+                    "How did you determine what level of detail to include?",
+                    "Did you consider who the decision-maker is in the room?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Identifies basic audience characteristics — seniority, function, familiarity with the topic — and adjusts formality accordingly. Begins to notice when a message lands differently than intended but attributes it to the content rather than the audience mismatch. Can tailor a message when explicitly coached on the audience's needs.",
+                  "coaching_questions": [
+                    "How would you change this message if it were going to a different audience — say, the CFO instead of the COO?",
+                    "Can you think of a time when your message landed differently than you expected? What happened?",
+                    "What did you do to learn about the audience's priorities before this meeting?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Systematically assesses the audience's knowledge level, motivations, and concerns before crafting a message. Anticipates how different stakeholders will interpret the same information and adjusts framing accordingly. Actively seeks pre-meeting intelligence about the audience's priorities and emotional state.",
+                  "coaching_questions": [
+                    "Walk me through your audience assessment for this presentation — what did you learn about their knowledge, motivations, and concerns?",
+                    "How did you tailor your message differently for the different stakeholders in the room?",
+                    "What pre-meeting intelligence did you gather, and how did it shape your approach?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Reads audience dynamics in real time — body language, energy, engagement — and adjusts on the fly. Intuitively knows which audience members are decision-makers versus influencers and calibrates accordingly. Anticipates not just what the audience knows but what they fear, hope for, and are politically incentivised to hear.",
+                  "coaching_questions": [
+                    "Tell me about a time you read the room mid-presentation and changed your approach — what signals did you pick up on?",
+                    "How do you distinguish between decision-makers and influencers, and how does that change your communication?",
+                    "When have you anticipated not just what an audience knows but what they fear or are politically incentivised to hear?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Perceives audience needs at a level that feels almost prescient — anticipating concerns before they are raised and addressing them pre-emptively. Designs communications that work simultaneously for multiple audiences with competing interests. The audience evaluation is so deeply integrated into practice that every communication feels personally crafted for its recipient.",
+                  "coaching_questions": [
+                    "Describe a communication you designed that worked simultaneously for multiple audiences with competing interests.",
+                    "How do you anticipate audience concerns before they are raised and address them pre-emptively?",
+                    "When has your audience evaluation been so precise that the recipient felt the message was crafted personally for them?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.2",
+              "building_block": "Message framing",
+              "description": "Recognize that the same facts can be presented through different lenses, and choose the frame that is both honest and most likely to be received as intended.",
+              "consulting_example": "Pyramid Principle (Minto)",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Presents facts without a deliberate frame, defaulting to chronological or data-dump order. Does not recognise that the same facts can support different interpretations depending on framing. Uses the frame given to them without evaluating whether it serves the communication goal.",
+                  "coaching_questions": [
+                    "Why did you choose to present the information this way rather than another way?",
+                    "If you had to summarise this message in one sentence, what would it be?",
+                    "Who gave you the framing you are using — did you develop it or inherit it?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Recognises that framing matters and can identify when a message would benefit from reframing. Experiments with different angles but may choose a frame based on personal preference rather than audience impact. Can apply a suggested frame but does not yet generate competing frames independently.",
+                  "coaching_questions": [
+                    "Can you think of a different way to frame this same set of facts? What would change?",
+                    "How do you decide which framing will be most persuasive to this audience?",
+                    "When have you reframed a message based on feedback, and what triggered the change?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Generates multiple framing options for the same set of facts and selects the one most likely to achieve the desired outcome. Evaluates frames for honesty and effectiveness simultaneously, avoiding manipulative framing. Adjusts the frame based on feedback or new information about the audience.",
+                  "coaching_questions": [
+                    "Walk me through the framing options you considered for this message and why you chose this one.",
+                    "How do you ensure your chosen frame is both honest and effective — where is the line?",
+                    "How would you adjust the frame if you learned the audience had a different set of priorities than you assumed?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Intuitively selects the most effective frame almost instantly, drawing on deep experience with different audiences and contexts. Reframes in real time when the initial frame is not landing, without losing the thread of the argument. Sees framing as a strategic lever, not just a communication technique.",
+                  "coaching_questions": [
+                    "Tell me about a time you reframed a message in real time because it was not landing — what did you change and why?",
+                    "How do you use framing as a strategic lever, not just a communication technique?",
+                    "When have you held multiple competing frames and deployed each where it was most effective?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Creates frames that shift how the audience thinks about the entire issue, not just the specific message. Frames emerge so naturally from the content and context that they do not feel like framing at all — they feel like truth. Can hold multiple competing frames simultaneously and deploy each where it will be most effective.",
+                  "coaching_questions": [
+                    "Describe a frame you created that shifted how the audience thought about the entire issue, not just the specific message.",
+                    "When has your framing felt so natural that the audience did not perceive it as framing at all?",
+                    "How do you create frames that work across multiple audiences with different mental models?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.3",
+              "building_block": "Message structuring",
+              "description": "Deliberately structure content or ideas so that the sequence, emphasis, and disclosure logic serve the audience's processing needs and the communicator's goals.\nCommunicate with precision and efficiency, using a clear, top-down message flow.",
+              "consulting_example": "Situation-Complication-Resolution (SCR) framework",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Organises content in the order it was analysed rather than in the order the audience needs to hear it. Buries the lead and takes too long to reach the main point. Structures messages the same way regardless of purpose — update, persuasion, decision request.",
+                  "coaching_questions": [
+                    "What is the main point of this message, and where does it appear — beginning, middle, or end?",
+                    "Why did you organise the supporting points in this particular order?",
+                    "How much of this content is essential versus nice to have?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Understands the principle of leading with the conclusion but struggles to execute it consistently under pressure. Can follow a provided structure (e.g., SCR, pyramid) but does not yet select the right structure for the situation. Begins to separate supporting detail from the main message but includes too much.",
+                  "coaching_questions": [
+                    "Can you restructure this message to lead with the conclusion? What changes?",
+                    "How did you decide which structural pattern to use — narrative, pyramid, comparison?",
+                    "What would you cut from this message if you had half the time?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Structures messages with a clear top-down flow, leading with the answer and supporting it with grouped evidence. Selects the appropriate structural pattern — narrative, pyramid, comparison — based on the communication goal. Edits ruthlessly for precision and efficiency, removing content that does not serve the message.",
+                  "coaching_questions": [
+                    "Walk me through the structural logic of this message — why this sequence, this emphasis, this level of detail?",
+                    "How did you decide what to include and what to edit out?",
+                    "How does the structure serve the audience's processing needs, not just your analytical sequence?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Structures complex, multi-audience messages so that each stakeholder can extract what they need without redundancy. Intuitively knows how much detail is too much and how much is too little for a given context. The structure itself carries persuasive force — the sequence of ideas builds momentum toward the conclusion.",
+                  "coaching_questions": [
+                    "Tell me about a complex, multi-audience message where the structure itself carried persuasive force — how did you design it?",
+                    "How do you calibrate the right amount of detail for a given context — what is your signal for too much or too little?",
+                    "When has your message structure built momentum toward the conclusion in a way that made the recommendation feel inevitable?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Creates message structures that feel effortless to follow even when the underlying content is highly complex. Innovates new structural approaches for novel communication challenges rather than defaulting to templates. Structure, content, and delivery are so tightly integrated that the message feels like a single, inevitable thought.",
+                  "coaching_questions": [
+                    "Describe a communication challenge where you innovated a new structural approach because existing templates did not fit.",
+                    "How do you achieve the integration of structure, content, and delivery so that the message feels like a single, unified thought?",
+                    "When has a complex message felt effortless for the audience to follow — and what structural choices made that possible?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.4",
+              "building_block": "Storytelling",
+              "description": "Use story — with tension and resolution — as a vehicle for meaning-making, not as decoration appended to argument. Deliberately choosing language, tone, and pacing to convey the message.",
+              "consulting_example": "Case-study narrative arc",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Presents findings as a list of facts without narrative tension or resolution. Does not see the difference between reporting information and telling a story. Uses data as decoration rather than as a character in the narrative.",
+                  "coaching_questions": [
+                    "Can you identify the tension and resolution in this narrative — or is it a list of facts?",
+                    "What is the emotional arc of this presentation — does it build toward something?",
+                    "How did you decide which details to include to make the story compelling?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Recognises when a narrative would be more engaging than a data summary and attempts basic story structures. Can add anecdotes or examples to illustrate a point but the story often feels appended rather than integrated. Begins to experiment with tone and pacing but defaults to a flat, reportorial voice.",
+                  "coaching_questions": [
+                    "Where in this communication could a narrative be more engaging than a data summary?",
+                    "How did you integrate the anecdote into the argument — does it support the point or sit alongside it?",
+                    "What tone and pacing choices did you make, and were they deliberate?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Crafts narratives with clear tension and resolution that make the analytical work feel compelling and memorable. Uses language, tone, and pacing deliberately to build toward the key insight. Integrates data into the story so that numbers feel like revelations rather than appendages.",
+                  "coaching_questions": [
+                    "Walk me through how you crafted this narrative — where is the tension, and where is the resolution?",
+                    "How does the data function inside the story — as a character, as evidence, or as decoration?",
+                    "How did you calibrate the language and pacing to build toward the key insight?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Tells stories that create genuine emotional engagement without sacrificing analytical rigour. Intuitively matches the narrative style to the audience and setting — boardroom gravity, workshop energy, one-on-one candour. Uses silence, rhythm, and emphasis as storytelling tools, not just words.",
+                  "coaching_questions": [
+                    "Tell me about a story you told that created genuine emotional engagement without sacrificing analytical rigour.",
+                    "How do you match narrative style to audience and setting — what changes between a boardroom and a workshop?",
+                    "When have you used silence, rhythm, or emphasis as storytelling tools?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Creates narratives that change how the audience sees the world, not just how they see the data. Story and analysis are indistinguishable — the narrative is the analysis, and the analysis is the narrative. Others retell the story to their own stakeholders, carrying the strategic message far beyond the original audience.",
+                  "coaching_questions": [
+                    "Describe a narrative you created that others retold to their own stakeholders, carrying the strategic message beyond the original audience.",
+                    "When has story and analysis been indistinguishable in your work — where the narrative was the analysis?",
+                    "How do you create stories that change how the audience sees the world, not just how they see the data?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.5",
+              "building_block": "Emotional calibration",
+              "description": "Calibrate the warmth, directness, formality, and emotional texture of communication to fit the relational and situational context. Perceiving and interpreting verbal, nonverbal, and contextual cues to discern meaning, intent, and emotion, responding appropriately to sustain mutual clarity and connection.\n\"Read the room\" and flex tone, style, and delivery to maintain attention and connection.",
+              "consulting_example": "Stakeholder empathy mapping",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Uses one default tone — often overly formal or overly casual — regardless of situation. Does not notice when the emotional register of the room has shifted. May inadvertently escalate tension or shut down dialogue through poorly calibrated directness.",
+                  "coaching_questions": [
+                    "Would you describe the tone of this message as formal, informal, warm, or neutral — and was that a deliberate choice?",
+                    "How did you decide how direct to be in delivering this message?",
+                    "Did you notice any emotional reactions from the audience? What did you do in response?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Notices obvious emotional cues — frustration, enthusiasm, confusion — and adjusts tone in response. Can modulate formality between a senior presentation and a peer discussion. Begins to recognise the gap between intent and impact in their own communication but needs feedback to close it.",
+                  "coaching_questions": [
+                    "Can you describe a situation where your tone did not match the moment — what happened?",
+                    "How do you adjust your communication style between a senior executive and a peer?",
+                    "When have you received feedback that your intent and your impact were different — what did you learn?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Reads verbal, nonverbal, and contextual cues to gauge the room's emotional state and adjusts warmth, directness, and pace accordingly. Matches tone to the relational and situational context — delivering hard truths with care, celebrating wins without overclaiming. Designs communication moments with emotional impact in mind, not just informational clarity.",
+                  "coaching_questions": [
+                    "Walk me through how you assessed the emotional state of the room before this conversation and calibrated accordingly.",
+                    "How did you design this communication moment for emotional impact, not just informational clarity?",
+                    "When you had to deliver hard truths, how did you balance directness with care?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Calibrates emotional register with precision in real time, shifting mid-conversation as the dynamics evolve. Manages their own emotional state under pressure so it does not leak into the communication. Creates space for others' emotions without being destabilised by them.",
+                  "coaching_questions": [
+                    "Tell me about a time you shifted emotional register mid-conversation because the dynamics were evolving — what did you sense?",
+                    "How do you manage your own emotional state under pressure so it does not bleed into the communication?",
+                    "When have you created space for others' emotions without being destabilised by them?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Sets the emotional tone of an entire engagement through presence and communication style. Others feel simultaneously challenged and supported — the emotional calibration enables harder conversations than would otherwise be possible. The emotional and intellectual dimensions of communication are fully integrated, creating an experience of genuine connection and clarity.",
+                  "coaching_questions": [
+                    "Describe how your emotional calibration has enabled a conversation that would have been impossible with a different tone.",
+                    "How do you set the emotional tone of an entire engagement through your communication style?",
+                    "When have others felt simultaneously challenged and supported by you — and how did you achieve that?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.6",
+              "building_block": "Adaptive strategy",
+              "description": "Respond to others’ perspectives. Diagnose the source of pushback — cognitive, emotional, or political — and respond in a way that addresses the underlying driver rather than only the surface objection. \nTreat communication as a learning loop: design for feedback, read real-time signals, and incorporate what you learn into subsequent interactions.",
+              "consulting_example": "Objection-handling playbook",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Responds to pushback by repeating the original argument more forcefully or retreating entirely. Does not diagnose whether resistance is cognitive, emotional, or political. Treats communication as one-directional — deliver the message and move on.",
+                  "coaching_questions": [
+                    "When someone pushed back on your recommendation, how did you respond?",
+                    "Did you change anything about your communication based on how it was received?",
+                    "How do you typically handle disagreement in a meeting?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Recognises that pushback has different drivers and can identify the most obvious one. Adjusts the argument when given coaching on what the other party needs to hear. Begins to solicit feedback but does not yet systematically incorporate it into subsequent interactions.",
+                  "coaching_questions": [
+                    "Can you tell the difference between pushback that is cognitive versus emotional versus political? Give an example.",
+                    "After receiving feedback on a previous communication, what did you change for the next interaction?",
+                    "When have you solicited feedback on your communication, and what did you do with it?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Diagnoses the source of resistance — cognitive disagreement, emotional reaction, political concern — and tailors the response accordingly. Designs communication with built-in feedback loops, checking for understanding and adjusting in real time. Treats each interaction as data that informs the next, building a progressively more effective communication strategy.",
+                  "coaching_questions": [
+                    "Walk me through how you diagnosed the source of resistance in a recent interaction and tailored your response.",
+                    "How do you build feedback loops into your communications so you can adjust in real time?",
+                    "How has your communication strategy for this engagement evolved from the first week to now?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Reads resistance at multiple levels simultaneously and addresses the deepest driver while acknowledging the surface concern. Adapts communication strategy across a multi-week engagement, learning and refining with each interaction. Turns pushback into a resource — using objections to strengthen the argument and deepen the relationship.",
+                  "coaching_questions": [
+                    "Tell me about a time you turned pushback into a resource — using objections to strengthen your argument and deepen the relationship.",
+                    "How do you adapt your communication strategy across a multi-week engagement based on what you learn from each interaction?",
+                    "When have you addressed a deeper driver of resistance while also acknowledging the surface concern?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Anticipates resistance before it emerges and designs communication that pre-empts it without feeling manipulative. The adaptive loop is so fast and natural that others experience the conversation as effortlessly collaborative. Creates adaptive communication norms that the wider team adopts, raising the collective capability.",
+                  "coaching_questions": [
+                    "Describe a situation where you anticipated resistance before it emerged and designed communication that pre-empted it.",
+                    "How do you create adaptive communication norms that the wider team adopts, raising collective capability?",
+                    "When has your adaptive loop been so natural that others experienced the conversation as effortlessly collaborative?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.7",
+              "building_block": "Channel and medium use",
+              "description": "Choose the right communication form based on message complexity, relationship tone, and desired outcome.",
+              "consulting_example": "Communication plan matrix (message × channel × audience)",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Defaults to the same channel — usually email or slide deck — for every type of communication. Does not consider how the medium shapes the message or the recipient's experience. Sends long, complex messages through channels suited to brief exchanges, or vice versa.",
+                  "coaching_questions": [
+                    "Why did you choose to communicate this via email rather than in person, or vice versa?",
+                    "How did you decide whether to use a slide deck, a memo, or a conversation for this message?",
+                    "Was the length and format of your message appropriate for the channel you chose?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Recognises that some messages are better delivered in person versus in writing, or in slides versus in a memo. Can match channel to purpose when the choice is obvious (e.g., bad news in person, status update via email). Begins to think about timing and sequence but mostly follows convention.",
+                  "coaching_questions": [
+                    "Can you think of a message you sent via the wrong channel? What would you do differently?",
+                    "When do you choose an in-person conversation over a written communication?",
+                    "How do you think about the timing and sequence of a multi-step communication?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Selects the channel and medium based on explicit evaluation of message complexity, relationship dynamics, and desired outcome. Designs multi-channel communication sequences — e.g., a pre-read memo followed by a live discussion followed by a written summary. Considers the recipient's communication preferences and adapts accordingly.",
+                  "coaching_questions": [
+                    "Walk me through the channel and medium choices you made for this communication — what did you evaluate?",
+                    "How did you design the multi-channel sequence — pre-read, live discussion, follow-up — for this engagement?",
+                    "How do you factor in the recipient's communication preferences when choosing a channel?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Intuitively orchestrates channel and timing to maximise impact — knowing when a hallway conversation will accomplish more than a formal meeting. Uses channel choice itself as a signal (e.g., a personal phone call to convey importance). Designs the full communication experience across touchpoints, not just individual messages.",
+                  "coaching_questions": [
+                    "Tell me about a time when a hallway conversation accomplished more than a formal meeting — how did you know to choose that channel?",
+                    "When have you used the choice of channel itself as a signal — e.g., a personal call to convey importance?",
+                    "How do you design the full communication experience across touchpoints, not just individual messages?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Creates communication ecosystems for complex engagements where channel, timing, and medium reinforce each other seamlessly. Innovates new communication formats when existing channels are insufficient for the situation. The medium becomes invisible — recipients experience only the message, perfectly delivered.",
+                  "coaching_questions": [
+                    "Describe a communication ecosystem you created for a complex engagement where channel, timing, and medium reinforced each other.",
+                    "When have you innovated a new communication format because existing channels were insufficient?",
+                    "When has the medium been so well-chosen that it was invisible — the recipient experienced only the message?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.8",
+              "building_block": "Building trust",
+              "description": "Ensure factual precision, internal consistency, and clarity of language.\nMaintain full attention, minimize distraction, and signal genuine engagement to support understanding and respect in conversation.\nActively manage the dimensions of trustworthiness — expertise, reliability, benevolence, integrity — as a long-term communication asset.",
+              "consulting_example": "Trust equation (Maister's credibility × reliability × intimacy ÷ self-orientation)",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Makes factual errors or inconsistencies that undermine credibility, often without noticing. Signals engagement superficially — nodding while distracted, checking devices during conversations. Does not recognise that trust is built through communication behaviour, not just content accuracy.",
+                  "coaching_questions": [
+                    "How do you check the accuracy of your claims before sharing them?",
+                    "What do you do when you realise you have made a factual error in a communication?",
+                    "How do you show the person you are speaking with that you are fully engaged in the conversation?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Fact-checks key claims before sharing them and corrects errors promptly when discovered. Demonstrates genuine listening in one-on-one settings but may lose focus in larger or longer meetings. Begins to recognise that consistency between words and actions affects how others perceive trustworthiness.",
+                  "coaching_questions": [
+                    "Can you describe a time you corrected an error promptly — what happened and how did the audience react?",
+                    "How do you maintain focus and signal genuine listening in long or difficult meetings?",
+                    "When has a gap between your words and your actions affected how someone perceived you?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Ensures factual precision, internal consistency, and clarity of language as a matter of professional discipline. Maintains full attention and signals genuine engagement even in difficult or tedious conversations. Deliberately manages credibility, reliability, and integrity through consistent communication behaviours over time.",
+                  "coaching_questions": [
+                    "Walk me through the specific habits you use to ensure factual precision and internal consistency in your communications.",
+                    "How do you deliberately manage credibility, reliability, and integrity through your communication behaviour?",
+                    "How do you signal genuine engagement even in conversations that are tedious or uncomfortable?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Communicates in ways that actively build trust — acknowledging uncertainty honestly, sharing credit, and following through on every commitment. Others experience their communication as dependably fair, accurate, and well-intentioned. Repairs trust breaches quickly by naming the issue, taking responsibility, and changing behaviour.",
+                  "coaching_questions": [
+                    "Tell me about a time you repaired a trust breach through communication — what did you do and how quickly?",
+                    "How do you communicate uncertainty honestly without undermining confidence in your recommendations?",
+                    "When do others experience your communication as dependably fair, accurate, and well-intentioned — what specific behaviours create that perception?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Has accumulated such deep trust through communication that their word carries weight even on unfamiliar topics. Models trustworthy communication so consistently that it raises the standard for everyone around them. Trust becomes a strategic asset — enabling conversations, decisions, and actions that would be impossible without it.",
+                  "coaching_questions": [
+                    "Describe how your accumulated trustworthiness in communication has given your word weight even on unfamiliar topics.",
+                    "How has your communication style raised the trust standard for others around you?",
+                    "When has trust become a strategic asset — enabling conversations or decisions that would have been impossible without it?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.9",
+              "building_block": "Facilitating group communication",
+              "description": "Guide discussions by balancing contributions, listening, and adapting to the context or participants. \nManage the flow and dynamics of the dialogue --balancing voices, tone, and process to maintain progress and inclusion.",
+              "consulting_example": "Structured workshop facilitation (e.g., Liberating Structures)",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Lets the loudest voice dominate and does not intervene to balance contributions. Follows a rigid agenda without adapting when the group needs to explore an unexpected topic. Confuses facilitating with presenting — talks more than the group does.",
+                  "coaching_questions": [
+                    "How do you handle it when one person dominates the discussion?",
+                    "Did you have a plan for this discussion, and how closely did you follow it?",
+                    "How much of the discussion did you talk versus listen?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Attempts to invite quieter participants into the conversation and recognises when one voice is dominating. Can follow a basic facilitation plan but struggles to deviate from it productively when the discussion takes an unexpected turn. Begins to manage time but often runs over or cuts productive discussions short.",
+                  "coaching_questions": [
+                    "What techniques do you use to invite quieter participants into the conversation?",
+                    "When the discussion went off-topic, how did you decide whether to redirect or explore the tangent?",
+                    "How did you manage time — did you finish what you needed to cover?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Designs and runs structured discussions that balance contributions, manage time, and maintain progress. Intervenes deliberately to redirect tangents, draw out dissent, and synthesise emerging themes. Adapts the facilitation approach mid-session when the group's energy or needs shift.",
+                  "coaching_questions": [
+                    "Walk me through how you designed this discussion — what structure did you use and why?",
+                    "How did you intervene to redirect tangents, draw out dissent, and synthesise emerging themes?",
+                    "When did you need to adapt your facilitation approach mid-session, and what triggered the change?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Reads group dynamics in real time — alliances, tensions, unspoken concerns — and adjusts facilitation accordingly. Creates conditions where the most important insights emerge from the group rather than being imposed by the facilitator. Manages both the content and the emotional process of the discussion simultaneously.",
+                  "coaching_questions": [
+                    "Tell me about a time you read group dynamics — alliances, tensions, unspoken concerns — and adjusted your facilitation in response.",
+                    "How do you create conditions where the most important insights emerge from the group rather than from you?",
+                    "When have you managed both the content and the emotional process of a discussion simultaneously?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Facilitates at a level where the group achieves outcomes they did not think were possible in the time available. Makes invisible interventions — subtle redirects, strategic questions, timed pauses — that shape the discussion without the group noticing. The facilitation itself becomes a model that participants carry into their own meetings and conversations.",
+                  "coaching_questions": [
+                    "Describe a facilitation where the group achieved an outcome they did not think was possible in the time available.",
+                    "What invisible interventions — subtle redirects, strategic questions, timed pauses — do you use to shape a discussion?",
+                    "When has your facilitation become a model that participants carried into their own meetings?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2.10",
+              "building_block": "Presenting",
+              "description": "Deliver findings, recommendations, and ideas to live audiences with clarity, confidence, and presence.\nAdapt delivery in real time based on audience reactions, questions, and energy in the room.",
+              "consulting_example": "Slide-writing standards (e.g., action-title slides)",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Reads directly from slides and does not adapt delivery to the room. Speaks in a monotone or rushes through material without checking for audience comprehension. Treats presenting as information transfer rather than a persuasive or relational act.",
+                  "coaching_questions": [
+                    "How much of your presentation did you deliver from memory versus reading from slides?",
+                    "How did you check whether the audience was following your presentation?",
+                    "What did you do when an audience member asked a question you were not prepared for?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Maintains basic eye contact and varies pace enough to hold attention for short stretches. Can field simple questions but loses composure when challenged or asked to go off-script. Begins to recognise that slides should support rather than replace the spoken message.",
+                  "coaching_questions": [
+                    "How did you decide what to put on the slides versus what to say out loud?",
+                    "Can you describe a moment when you lost the audience's attention? What happened?",
+                    "When you were challenged during a presentation, how did you respond?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Delivers findings with a clear narrative arc, confident presence, and deliberate pacing. Handles questions and challenges calmly, using them to reinforce key points rather than becoming defensive. Designs slides that complement the spoken message, using visuals and action titles effectively.",
+                  "coaching_questions": [
+                    "Walk me through the narrative arc of this presentation — how does it build toward the key message?",
+                    "How did you handle the toughest question or challenge during this presentation?",
+                    "How do your slides complement the spoken message rather than duplicating it?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Commands attention in a room through presence, not just content — varying energy, emphasis, and pauses to guide the audience's experience. Reads the room in real time and adjusts depth, pace, or sequence to match the audience's engagement level. Turns challenging moments — tough questions, scepticism, interruptions — into opportunities that strengthen the presentation.",
+                  "coaching_questions": [
+                    "Tell me about a time you adjusted your depth, pace, or sequence mid-presentation because of what you were reading in the room.",
+                    "When have you turned a challenging moment — a tough question, scepticism, an interruption — into something that strengthened the presentation?",
+                    "How do you use energy, emphasis, and pauses to guide the audience's experience?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Presents in a way that changes how the audience thinks, decides, or acts, far beyond what the slides alone could achieve. Delivery is so natural and authoritative that the distinction between presenting and advising disappears. Others study and emulate the presenting style, and the presentations themselves become reference points within the organisation.",
+                  "coaching_questions": [
+                    "Describe a presentation that changed how the audience thought, decided, or acted — far beyond what the slides alone could achieve.",
+                    "When has the distinction between presenting and advising disappeared — where delivery was so natural it felt like a conversation?",
+                    "How have your presentations become reference points within the client's organisation?"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "competency_number": 3,
+      "competency_name": "BUILDING RELATIONSHIPS & COUNSELING CLIENTS",
+      "skills": [
+        {
+          "skill_name": "Builds Relationships | Counsels Clients",
+          "building_blocks": [
+            {
+              "id": "3.1",
+              "building_block": "Creating psychological safety",
+              "description": "Create the relational conditions in which a client feels safe enough to be honest about their real situation, fears, uncertainties, and what they actually need.",
+              "consulting_example": "Contracting conversation (explicit norms-setting at engagement start)",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Assumes the client will share openly because the consulting relationship warrants it. Does not recognise signs of withholding, discomfort, or performative agreement. Relies on professional courtesy rather than deliberate relational practices to create safety.",
+                  "coaching_questions": [
+                    "How do you create an environment where the client feels comfortable sharing bad news with you?",
+                    "What do you do at the start of a new engagement to establish trust?",
+                    "Have you noticed a client holding back? What did you do about it?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Notices obvious signs of client discomfort and adjusts — softening tone or pausing — but may inadvertently create pressure through over-probing. Begins to understand that safety requires action, not just good intentions. Can create safety in one-on-one conversations but struggles in group settings.",
+                  "coaching_questions": [
+                    "Can you describe a time you sensed a client was uncomfortable — what were the signs, and how did you respond?",
+                    "What is the difference between being polite and creating genuine psychological safety?",
+                    "How do you create safety in a group setting compared to one-on-one?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Deliberately creates safety through specific practices — setting expectations about confidentiality, naming difficult dynamics, and modelling vulnerability. Recognises when a client is performing confidence rather than feeling it and adjusts the approach. Maintains psychological safety even when delivering challenging messages.",
+                  "coaching_questions": [
+                    "Walk me through the specific practices you use to create safety — norm-setting, confidentiality framing, modelling vulnerability.",
+                    "How do you recognise when a client is performing confidence rather than feeling it?",
+                    "How do you maintain psychological safety even when delivering difficult or unwelcome messages?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Intuitively calibrates how much challenge a client can absorb and paces the conversation accordingly. Creates conditions where clients voluntarily share information they initially intended to withhold. Manages the emotional temperature of multi-stakeholder meetings so that everyone feels safe enough to contribute honestly.",
+                  "coaching_questions": [
+                    "Tell me about a time a client voluntarily shared something they initially intended to withhold — what created the conditions for that?",
+                    "How do you calibrate how much challenge a client can absorb and pace the conversation accordingly?",
+                    "When have you managed the emotional temperature of a multi-stakeholder meeting so that everyone felt safe to contribute honestly?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Has a presence that makes psychological safety the default — clients relax and open up without any visible technique being applied. Creates safety at the organisational level, enabling honest conversations that were previously impossible. Others experience the relationship itself as transformative, independent of the consulting content.",
+                  "coaching_questions": [
+                    "Describe a relationship where your presence made safety the default — without any visible technique being applied.",
+                    "How have you created safety at the organisational level, enabling conversations that were previously impossible?",
+                    "When has the client experienced the relationship itself as transformative, independent of the consulting content?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3.2",
+              "building_block": "Asking questions and actively listening",
+              "description": "Use questions not primarily to gather information but to expand the client's thinking, challenge assumptions, and open new perspectives. \nProcess what is said, how it is said, and what is withheld to arrive at a full picture of the client's experience.",
+              "consulting_example": "SPIN questioning framework (Situation, Problem, Implication, Need-payoff)",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Asks questions primarily to fill a checklist or data template rather than to explore the client's thinking. Listens for answers to their own questions rather than for what the client is actually communicating. Misses nonverbal cues and does not notice when something important is being left unsaid.",
+                  "coaching_questions": [
+                    "What was the purpose of the questions you asked in the last client meeting — what were you trying to learn?",
+                    "Can you paraphrase what the client told you and what you think they meant by it?",
+                    "Did you notice any nonverbal cues during the conversation? What did they tell you?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Asks follow-up questions that show genuine curiosity and can paraphrase what the client said to confirm understanding. Begins to notice tone, hesitation, and body language as sources of information. Listens more fully in one-on-one settings but may revert to checklist mode in group interviews.",
+                  "coaching_questions": [
+                    "When you followed up on an answer, what prompted you to dig deeper?",
+                    "Can you describe what you heard in the client's tone or hesitation, beyond just the words?",
+                    "How does your questioning approach differ in a one-on-one interview versus a group setting?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Uses questions strategically — to expand thinking, challenge assumptions, or open new perspectives rather than just to gather data. Processes what is said, how it is said, and what is withheld to arrive at a full picture. Holds silence comfortably, allowing the client space to arrive at deeper reflections.",
+                  "coaching_questions": [
+                    "Walk me through how you used questions strategically in this conversation — to expand thinking, challenge assumptions, or open new perspectives.",
+                    "What did you learn from what the client did not say, and how did you process that?",
+                    "When did you hold silence and let the client arrive at a deeper reflection? What happened?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Asks questions that the client has never been asked before, unlocking new self-awareness or strategic insight. Hears the system behind the individual — detecting organisational patterns, political undercurrents, and cultural norms from a single conversation. Intuitively knows when to probe and when to let a topic rest.",
+                  "coaching_questions": [
+                    "Tell me about a question you asked that the client had never been asked before — what did it unlock?",
+                    "How do you hear the system behind the individual — detecting organisational patterns or political undercurrents from a single conversation?",
+                    "When have you intuitively known when to probe further and when to let a topic rest?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Questions function as interventions — each one shifts the client's thinking in a way that is itself valuable, independent of the answer. Listens at a level that makes the client feel more deeply understood than in any other professional relationship. The questioning and listening practice becomes a model that clients adopt in their own leadership.",
+                  "coaching_questions": [
+                    "Describe a question that functioned as an intervention — where the question itself shifted the client's thinking, independent of the answer.",
+                    "When has a client felt more deeply understood in conversation with you than in any other professional relationship?",
+                    "How has your questioning practice become a model that the client has adopted in their own leadership?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3.3",
+              "building_block": "Client need framing",
+              "description": "Distinguishing presenting requests from underlying needs, and surface symptoms from systemic causes, before any advice or action is offered.",
+              "consulting_example": "Presenting problem vs. root cause analysis",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Takes the client's stated request at face value without exploring whether it addresses the real need. Does not distinguish between what the client asks for and what the client actually needs. May deliver exactly what was requested while missing the opportunity to solve the real problem.",
+                  "coaching_questions": [
+                    "Is the work you are doing addressing what the client asked for, what they need, or both?",
+                    "How did you validate that the stated request matches the underlying problem?",
+                    "Has the client's real need differed from their initial request? How did you discover that?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Begins to notice gaps between the stated request and the underlying situation, especially when the evidence does not fit the brief. Asks clarifying questions that occasionally surface a deeper need but does not yet do this systematically. Recognises that clients may not fully understand their own needs but is unsure how to navigate that without seeming presumptuous.",
+                  "coaching_questions": [
+                    "Can you give me an example of a gap you noticed between what a client asked for and what they actually needed?",
+                    "How do you explore whether a presenting request masks a deeper issue without seeming presumptuous?",
+                    "When have your clarifying questions surfaced a need the client had not articulated?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Systematically explores the gap between the presenting request and the underlying need before proposing any solution. Surfaces symptoms versus systemic causes through structured inquiry and gentle challenge. Reframes the engagement scope when the original brief does not match the real problem, gaining client buy-in for the shift.",
+                  "coaching_questions": [
+                    "Walk me through how you systematically explored the gap between the stated request and the underlying need.",
+                    "How did you distinguish symptoms from systemic causes before proposing a solution?",
+                    "When you needed to reframe the engagement scope, how did you gain client buy-in for the shift?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Senses the real need early — often within the first conversation — and navigates toward it without dismissing the client's stated request. Holds multiple hypotheses about what the client truly needs and refines them as the relationship deepens. Reframes needs in ways that the client experiences as illuminating rather than threatening.",
+                  "coaching_questions": [
+                    "Tell me about a time you sensed the real need within the first conversation — what gave it away?",
+                    "How do you hold multiple hypotheses about what the client truly needs and refine them over time?",
+                    "When have you reframed a client's need in a way they experienced as illuminating rather than threatening?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Sees the client's need within the full context of their organisational, competitive, and personal situation simultaneously. Helps the client discover their own real need rather than simply diagnosing it for them. The need-framing process itself builds capability in the client, making them better at defining their own challenges going forward.",
+                  "coaching_questions": [
+                    "Describe how you helped a client discover their own real need rather than simply diagnosing it for them.",
+                    "How do you see the client's need within the full context of their organisational, competitive, and personal situation?",
+                    "When has your need-framing process built capability in the client — making them better at defining their own challenges?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3.4",
+              "building_block": "Building trust",
+              "description": "Actively manage the dimensions of trustworthiness — expertise, reliability, benevolence, integrity — across the full arc of a relationship, not just at its start.",
+              "consulting_example": "Trusted Advisor model (Maister, Green, Galford)",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Focuses on demonstrating competence without attending to reliability, benevolence, or integrity. Builds rapport superficially — small talk and friendliness — without creating deeper professional trust. Does not recognise that trust is actively earned and can be actively eroded.",
+                  "coaching_questions": [
+                    "How do you demonstrate competence to a new client?",
+                    "What do you do when you cannot deliver on a commitment?",
+                    "How do you build rapport beyond surface-level small talk?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Follows through on commitments consistently and begins to earn a reputation for reliability. Recognises when trust has been damaged and feels the impact but does not yet know how to repair it. Builds trust within the immediate project team but has not yet extended it to senior client stakeholders.",
+                  "coaching_questions": [
+                    "Can you give me an example of a commitment you followed through on that strengthened a client's trust?",
+                    "When has trust been damaged in a client relationship? What happened and what did you do?",
+                    "How do you build trust with senior stakeholders you do not interact with day to day?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Actively manages all four dimensions of trust — expertise, reliability, benevolence, and integrity — through deliberate behaviours. Keeps self-orientation low by genuinely prioritising the client's interest over personal or firm interests. Addresses trust breaches directly and promptly, taking responsibility and changing behaviour.",
+                  "coaching_questions": [
+                    "Walk me through how you actively manage credibility, reliability, benevolence, and integrity in a client relationship.",
+                    "How do you keep self-orientation low — genuinely prioritising the client's interest over your own?",
+                    "Describe a trust breach you addressed directly — how did you take responsibility and change behaviour?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Has earned deep trust that extends beyond the current engagement — the client consults them on issues outside the project scope. Intuitively knows which dimension of trust needs attention at any given moment and acts accordingly. Manages trust across multiple relationships simultaneously, calibrating differently for each stakeholder.",
+                  "coaching_questions": [
+                    "Tell me about a time a client consulted you on an issue outside the project scope — what had you done to earn that level of trust?",
+                    "How do you manage trust across multiple stakeholders simultaneously, calibrating differently for each?",
+                    "When have you intuitively sensed which dimension of trust needed attention and acted on it?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Trust is so deeply established that it becomes a strategic asset — enabling conversations, decisions, and changes that would be impossible without it. Models trustworthiness so consistently that it sets the relational standard for the entire engagement team. The trust built outlasts the consulting relationship and becomes part of the client's professional network.",
+                  "coaching_questions": [
+                    "Describe how the trust you have built has enabled conversations, decisions, or changes that would have been impossible without it.",
+                    "How has your modelling of trustworthiness set the relational standard for the entire engagement team?",
+                    "When has the trust you built outlasted the consulting relationship and become part of the client's professional network?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3.5",
+              "building_block": "Coaching senior leaders",
+              "description": "Calibrating guidance to genuine uncertainty, explaining reasoning transparently, and framing recommendations as options rather than verdicts.",
+              "consulting_example": "Reflective inquiry model (asking before telling)",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Defaults to giving direct advice based on the analysis, without considering the leader's context, constraints, or readiness. Presents recommendations as the correct answer rather than as one of several options. Does not recognise that coaching a senior leader requires a fundamentally different posture than delivering a recommendation.",
+                  "coaching_questions": [
+                    "How do you typically present a recommendation to a senior leader?",
+                    "Do you frame your advice as the right answer or as one of several options? Why?",
+                    "What do you do when a senior leader disagrees with your recommendation?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Recognises that senior leaders need to feel ownership of the solution and begins to frame recommendations as options. Can explain reasoning when asked but does not yet proactively offer transparency about assumptions and trade-offs. Adjusts tone for seniority but does not yet calibrate to the individual leader's decision-making style.",
+                  "coaching_questions": [
+                    "How do you adjust your tone and approach when speaking with a C-suite leader versus a mid-level manager?",
+                    "Can you describe a time you explained your reasoning transparently — including what you were unsure about?",
+                    "When you framed a recommendation as options, how did the leader respond compared to when you gave a single answer?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Frames recommendations as options with explicit trade-offs, allowing the leader to exercise genuine choice. Explains reasoning transparently, including what is known, what is uncertain, and what was assumed. Calibrates guidance to the leader's genuine uncertainty — providing structure where they lack clarity and space where they need to think.",
+                  "coaching_questions": [
+                    "Walk me through how you framed the trade-offs in your last recommendation to a senior leader.",
+                    "How do you calibrate guidance to the leader's genuine uncertainty — providing structure where they lack clarity and space where they need to think?",
+                    "How transparent are you about your assumptions and what is unknown?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Reads the leader's emotional and cognitive state and adjusts the coaching approach in real time. Knows when to provide frameworks and when to simply hold space for the leader to think aloud. Challenges the leader's thinking respectfully but directly, in ways that expand rather than narrow their perspective.",
+                  "coaching_questions": [
+                    "Tell me about a time you challenged a senior leader's thinking respectfully but directly — what was the effect?",
+                    "How do you read a leader's emotional and cognitive state and adjust your coaching approach in real time?",
+                    "When have you known when to provide a framework versus when to simply hold space for the leader to think aloud?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Functions as a true thought partner — the leader seeks them out not for answers but for the quality of the thinking process. Helps leaders see their own blind spots without creating defensiveness or dependence. The coaching relationship enables the leader to make better decisions long after the engagement ends.",
+                  "coaching_questions": [
+                    "Describe a relationship where a senior leader sought you out not for answers but for the quality of the thinking process.",
+                    "How do you help leaders see their own blind spots without creating defensiveness or dependence?",
+                    "When has a coaching relationship enabled a leader to make better decisions long after the engagement ended?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3.6",
+              "building_block": "Context framing",
+              "description": "Holding the client's individual situation and their organisational, cultural, and relational ecosystem simultaneously in view when diagnosing and advising.",
+              "consulting_example": "Organisational ecosystem mapping",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Analyses the client's problem in isolation from their broader organisational, cultural, or competitive context. Applies the same diagnostic lens regardless of industry, culture, or political dynamics. May produce technically sound advice that fails because it ignores contextual realities.",
+                  "coaching_questions": [
+                    "What do you know about this client's organisational culture, and how did you learn it?",
+                    "How did you factor in the client's political dynamics when developing your recommendation?",
+                    "Could this recommendation fail for reasons unrelated to its analytical quality?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Recognises that context matters and asks basic questions about organisational structure, culture, and stakeholder dynamics. Can incorporate contextual information when it is provided but does not yet proactively seek it. May over-index on one contextual dimension (e.g., politics) while neglecting others (e.g., culture).",
+                  "coaching_questions": [
+                    "What contextual questions do you typically ask at the start of an engagement?",
+                    "Can you identify which contextual factors — culture, politics, capability — you paid the most attention to and which you may have overlooked?",
+                    "When has a recommendation you supported failed because of contextual factors? What did you learn?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Systematically maps the client's organisational, cultural, and relational ecosystem before diagnosing or advising. Holds the individual problem and the broader context simultaneously in view, adjusting recommendations accordingly. Identifies when a technically correct recommendation will fail due to cultural, political, or capability constraints.",
+                  "coaching_questions": [
+                    "Walk me through how you mapped this client's organisational, cultural, and relational ecosystem before advising.",
+                    "How do you hold the individual problem and the broader context simultaneously when developing recommendations?",
+                    "When did you identify that a technically correct recommendation would fail due to cultural or political constraints?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Reads organisational context rapidly and accurately, often grasping the real power dynamics and cultural norms faster than the client expects. Integrates context so seamlessly that recommendations feel native to the organisation rather than externally imposed. Anticipates how context will evolve as the engagement progresses and adjusts framing proactively.",
+                  "coaching_questions": [
+                    "Tell me about a time you grasped the real power dynamics and cultural norms of an organisation faster than the client expected.",
+                    "How do you integrate context so seamlessly that your recommendations feel native to the organisation?",
+                    "When have you anticipated how the context would evolve during the engagement and adjusted your framing proactively?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Sees the full system — competitive, regulatory, cultural, interpersonal, historical — as a single, integrated picture. Uses contextual insight as a strategic tool, reframing the client's situation in ways that reveal opportunities invisible from inside the organisation. The contextual framing itself becomes one of the most valued contributions of the engagement.",
+                  "coaching_questions": [
+                    "Describe a situation where your contextual insight revealed an opportunity that was invisible from inside the organisation.",
+                    "How do you see the full system — competitive, regulatory, cultural, interpersonal, historical — as a single, integrated picture?",
+                    "When has your contextual framing been one of the most valued contributions of the engagement?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3.7",
+              "building_block": "Networking",
+              "description": "Build and sustain a client network.\nProactively cultivate relationships beyond active engagements to generate trust, referrals, and future opportunities.",
+              "consulting_example": "Relationship CRM / client development plan",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Interacts only with clients on active engagements and does not maintain relationships between projects. Views networking as a transactional activity — reaching out only when something is needed. Does not yet see relationship-building as a professional skill that requires deliberate practice.",
+                  "coaching_questions": [
+                    "How many former clients or professional contacts have you stayed in touch with after a project ended?",
+                    "What does your typical approach to maintaining professional relationships look like?",
+                    "Do you think of networking as something you do deliberately or something that happens naturally?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Maintains contact with a small number of former clients through occasional check-ins. Attends industry events but struggles to convert introductions into meaningful professional relationships. Recognises the value of a network but builds it reactively rather than strategically.",
+                  "coaching_questions": [
+                    "How do you stay relevant to a former client between engagements?",
+                    "Can you describe a professional event where you successfully turned an introduction into a meaningful relationship?",
+                    "Do you have a networking strategy, or do you build relationships reactively?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Proactively cultivates relationships beyond active engagements, staying visible and relevant to former clients and industry contacts. Develops a deliberate networking strategy — targeting specific relationships, industries, or roles — aligned with personal and firm development goals. Provides value to contacts without expecting immediate return, building goodwill and trust.",
+                  "coaching_questions": [
+                    "Walk me through your networking strategy — which relationships are you targeting and why?",
+                    "How do you provide value to contacts without expecting immediate return?",
+                    "How is your networking strategy aligned with your personal development goals and the firm's priorities?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Maintains a broad, active network that generates referrals, insights, and opportunities with minimal explicit effort. Intuitively knows which relationships to invest in and when to re-engage a dormant connection. Serves as a connector — introducing people across their network in ways that create mutual value.",
+                  "coaching_questions": [
+                    "Tell me about a relationship you re-engaged after a long dormant period — how did you know it was the right time?",
+                    "How do you serve as a connector — introducing people across your network to create mutual value?",
+                    "When has a relationship in your network generated a referral or opportunity without you explicitly asking?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Has built a network that functions as a strategic asset for the firm, not just for personal business development. Relationships are so deep and multidimensional that the consultant is seen as a permanent part of the client's extended professional circle. Network effects compound — each relationship strengthens the others, creating an ecosystem of trust and opportunity.",
+                  "coaching_questions": [
+                    "Describe how your network has become a strategic asset for the firm, not just for your personal business development.",
+                    "When have network effects compounded — where each relationship strengthened the others?",
+                    "How do you sustain relationships so deep that you are seen as a permanent part of the client's professional circle?"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3.8",
+              "building_block": "Adding value",
+              "description": "Consistently deliver insights, connections, or perspective that exceed the stated scope of work.\nLeave the client better off in ways they did not initially ask for, reinforcing the relationship and the firm's reputation.",
+              "consulting_example": "Value-add tracker (unsolicited insights log)",
+              "proficiency_levels": [
+                {
+                  "level": 1,
+                  "level_name": "Novice",
+                  "level_subtitle": "Context-free rule-following",
+                  "description": "Delivers exactly what was scoped without looking for opportunities to exceed expectations. Does not recognise moments where a small additional insight, connection, or effort could significantly increase the client's perceived value. Views the engagement scope as a ceiling rather than a floor.",
+                  "coaching_questions": [
+                    "Have you identified any opportunities to help the client beyond the stated scope of work?",
+                    "What would exceeding expectations look like on this engagement?",
+                    "How do you distinguish between adding value and scope creep?"
+                  ]
+                },
+                {
+                  "level": 2,
+                  "level_name": "Advanced Beginner",
+                  "level_subtitle": "Situational recognition",
+                  "description": "Occasionally identifies an opportunity to add value beyond the scope but hesitates to share it without being asked. Shares relevant articles or ideas ad hoc but does not yet make it a consistent practice. Begins to understand that perceived value is shaped by more than just deliverable quality.",
+                  "coaching_questions": [
+                    "Can you describe a time you spotted an opportunity to add value but hesitated to raise it? What held you back?",
+                    "How consistently do you share relevant articles, ideas, or connections with clients?",
+                    "What shapes a client's perception of value beyond the quality of the deliverable itself?"
+                  ]
+                },
+                {
+                  "level": 3,
+                  "level_name": "Competent",
+                  "level_subtitle": "Deliberate & effortful",
+                  "description": "Consistently identifies and shares insights, connections, or perspectives that exceed the stated scope without overstepping. Positions value-adds so they feel generous rather than like scope creep or upselling. Tracks client needs and interests beyond the project, proactively surfacing relevant information from other engagements or industries.",
+                  "coaching_questions": [
+                    "Walk me through the unsolicited insights or connections you have provided to this client — how did you identify them?",
+                    "How do you position value-adds so they feel generous rather than like scope creep or upselling?",
+                    "How do you track client needs and interests beyond the project scope?"
+                  ]
+                },
+                {
+                  "level": 4,
+                  "level_name": "Proficient",
+                  "level_subtitle": "Intuitive perception",
+                  "description": "Creates a pattern of unexpected value that becomes a defining feature of the client relationship. Intuitively identifies the two or three things the client does not know they need and delivers them at exactly the right moment. Adds value in ways that strengthen the client's internal standing — making them look good to their own stakeholders.",
+                  "coaching_questions": [
+                    "Tell me about a value-add you delivered at exactly the right moment — how did you know the timing was right?",
+                    "How do you add value in ways that strengthen the client's internal standing — making them look good to their own stakeholders?",
+                    "When has your pattern of unexpected value become a defining feature of the client relationship?"
+                  ]
+                },
+                {
+                  "level": 5,
+                  "level_name": "Expert",
+                  "level_subtitle": "Holistic & fluid",
+                  "description": "Has redefined what the client expects from a consulting relationship through the consistent quality and relevance of unsolicited contributions. Value creation extends beyond the engagement — the consultant's insights, frameworks, and connections continue to benefit the client long after the project ends. The client views the relationship itself as one of the most valuable assets in their professional life.",
+                  "coaching_questions": [
+                    "Describe how you have redefined what a client expects from a consulting relationship through your unsolicited contributions.",
+                    "When have your insights, frameworks, or connections continued to benefit the client long after the project ended?",
+                    "When has the client viewed the relationship itself as one of the most valuable assets in their professional life?"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1337 @@
+{
+  "metadata": {
+    "version": "6.0",
+    "based_on": "cardsv5.json",
+    "updated_at": "2025-11-20T22:01:52.570249Z",
+    "changes": {
+      "weights_normalized_from_sum": 0,
+      "added_fields": [
+        "detection_hooks",
+        "micro_upgrade",
+        "status_rubric",
+        "aliases",
+        "scope_note"
+      ],
+      "template_updates": [
+        "coaching_loop.show_if",
+        "coaching_loop.max_runtime_minutes"
+      ]
+    }
+  },
+  "cards": [
+    {
+      "id": "expectation_failure",
+      "visible_group": "Challenge & Growth",
+      "label": "Expectation Failure",
+      "definition": "Use small surprises or mistakes to help people update their understanding.",
+      "why_it_matters": "When ideas clash with expectations, people pay more attention and remember better.",
+      "caution": "Too much confusion can cause frustration — keep it safe and supported.",
+      "signals": [
+        "Prediction activities followed by reveal or correction"
+      ],
+      "minimum_bar": "One moment that gently challenges assumptions.",
+      "gold_standard": "Several low-risk challenges with guided reflection.",
+      "rubric": {
+        "weight": 0.05,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "No opportunities for expectation failure"
+          },
+          {
+            "score": 1,
+            "descriptor": "One mild challenge moment"
+          },
+          {
+            "score": 2,
+            "descriptor": "Multiple structured challenge moments"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "productive_friction",
+      "visible_group": "Challenge & Growth",
+      "label": "Productive Friction",
+      "definition": "Include just enough challenge to make people think hard without overwhelming them.",
+      "why_it_matters": "A bit of struggle helps people learn deeply and feel achievement.",
+      "caution": "Too much challenge without support causes stress or disengagement.",
+      "signals": [
+        "Stretch activities with support or feedback",
+        "Facilitator normalizes effort and mistakes"
+      ],
+      "minimum_bar": "At least one moderate-challenge task with support.",
+      "gold_standard": "Calibrated sequence of stretch tasks with feedback and recovery.",
+      "rubric": {
+        "weight": 0.07,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "All tasks easy or frustrating"
+          },
+          {
+            "score": 1,
+            "descriptor": "Some challenge but uneven support"
+          },
+          {
+            "score": 2,
+            "descriptor": "Balanced challenge with guidance and reflection"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "scaffolded",
+      "visible_group": "Challenge & Growth",
+      "label": "Scaffolded Support",
+      "definition": "Provide clear steps or examples early on, then gradually remove them as learners improve.",
+      "why_it_matters": "Scaffolding builds confidence and independence without overwhelming people.",
+      "caution": "Too much support limits growth; too little creates frustration.",
+      "signals": [
+        "Templates or guides early, removed later",
+        "Facilitator models before learners try"
+      ],
+      "minimum_bar": "At least one scaffolded task with support.",
+      "gold_standard": "Planned fade from example to independence.",
+      "rubric": {
+        "weight": 0.07,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "No clear support or scaffolding"
+          },
+          {
+            "score": 1,
+            "descriptor": "Support given but not faded"
+          },
+          {
+            "score": 2,
+            "descriptor": "Clear scaffolding that fades appropriately"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "worked_examples",
+      "visible_group": "Challenge & Growth",
+      "label": "Worked Examples & Fading",
+      "definition": "Model expert thinking with step-by-step examples, then gradually remove support.",
+      "why_it_matters": "Reduces cognitive load early and speeds transfer to independent performance.",
+      "caution": "If support never fades, dependence grows; fade deliberately.",
+      "signals": [
+        "Think-aloud demonstration before practice",
+        "Transition from partial to open problems"
+      ],
+      "minimum_bar": "At least one modeled example before a complex task.",
+      "gold_standard": "Sequence of worked → completion → independent tasks with explicit fade plan.",
+      "rubric": {
+        "weight": 0.08,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "No modeling before difficult tasks"
+          },
+          {
+            "score": 1,
+            "descriptor": "Some examples without planned fading"
+          },
+          {
+            "score": 2,
+            "descriptor": "Clear modeling with systematic fade to independence"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "autonomy_relevance",
+      "visible_group": "Connection & Belonging",
+      "label": "Choice, Autonomy & Relevance",
+      "definition": "Offer meaningful choices and connect tasks to learners’ values and contexts.",
+      "why_it_matters": "Autonomy and perceived value drive engagement and persistence.",
+      "caution": "Too many choices increase cognitive load—curate options.",
+      "signals": [
+        "Choice of cases, tools, or roles",
+        "Personal relevance prompts (why this matters for me)"
+      ],
+      "minimum_bar": "One meaningful learner choice.",
+      "gold_standard": "Curated choice + explicit value framing + personal goal alignment.",
+      "rubric": {
+        "weight": 0.06,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "No choice or value framing"
+          },
+          {
+            "score": 1,
+            "descriptor": "Limited choice or generic relevance"
+          },
+          {
+            "score": 2,
+            "descriptor": "Meaningful choices with strong value alignment"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "emotion_encoding",
+      "visible_group": "Connection & Belonging",
+      "label": "Emotion-Linked Encoding",
+      "definition": "Connect key ideas to emotionally resonant stories, stakes, or personal relevance to strengthen memory.",
+      "why_it_matters": "Emotional salience sharpens encoding and recall.",
+      "caution": "Avoid manipulation; keep emotional content authentic and relevant.",
+      "signals": [
+        "Use of brief stories with stakes aligned to the learning goal",
+        "Prompts to connect content to personal values or experiences"
+      ],
+      "minimum_bar": "One authentic emotional hook for a core idea.",
+      "gold_standard": "Consistent, ethical use of emotional relevance with reflection on impact.",
+      "rubric": {
+        "weight": 0.06,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "Purely abstract, affect-neutral delivery"
+          },
+          {
+            "score": 1,
+            "descriptor": "Isolated stories with weak alignment"
+          },
+          {
+            "score": 2,
+            "descriptor": "Targeted emotional hooks clearly tied to outcomes"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "feedback",
+      "visible_group": "Connection & Belonging",
+      "label": "Feedback",
+      "definition": "Give timely, specific responses that help learners improve.",
+      "why_it_matters": "Good feedback helps people understand what works and what to adjust next time.",
+      "caution": "Late or vague feedback can lower confidence or motivation.",
+      "signals": [
+        "Feedback within the same session",
+        "Peer or facilitator responses tied to clear criteria"
+      ],
+      "minimum_bar": "One feedback opportunity linked to learning goals.",
+      "gold_standard": "Several short, timely feedback loops across the session.",
+      "rubric": {
+        "weight": 0.1,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "No clear feedback moments"
+          },
+          {
+            "score": 1,
+            "descriptor": "Some feedback or unclear timing"
+          },
+          {
+            "score": 2,
+            "descriptor": "Timely, specific, criteria-based feedback"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "peer_teaching",
+      "visible_group": "Connection & Belonging",
+      "label": "Peer Teaching & Collaborative Sense-Making",
+      "definition": "Structure collaboration so learners explain, question, and co-construct understanding.",
+      "why_it_matters": "Explaining to others and resolving disagreements deepen understanding and belonging.",
+      "caution": "Unstructured group work can hide disengagement; use roles and artifacts.",
+      "signals": [
+        "Teach-back, jigsaw, or roles with deliverables",
+        "Norms for equitable talk time"
+      ],
+      "minimum_bar": "One structured peer-explain activity.",
+      "gold_standard": "Multiple collaborative cycles with visible artifacts and rotation of roles.",
+      "rubric": {
+        "weight": 0.08,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "Unstructured discussion only"
+          },
+          {
+            "score": 1,
+            "descriptor": "Some structure but weak accountability"
+          },
+          {
+            "score": 2,
+            "descriptor": "Well-scaffolded collaboration with shared products"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "safe_equitable",
+      "visible_group": "Connection & Belonging",
+      "label": "Safe & Equitable Environment",
+      "definition": "Create norms and examples that make all participants feel safe to speak and take risks.",
+      "why_it_matters": "People learn best when they feel respected and safe to contribute.",
+      "caution": "Without clear norms, discussions can become dominated or exclusionary.",
+      "signals": [
+        "Group norms shared",
+        "Inclusive language and examples"
+      ],
+      "minimum_bar": "Basic ground rules shared at the start.",
+      "gold_standard": "Inclusive norms reinforced and modeled throughout.",
+      "rubric": {
+        "weight": 0.08,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "No stated norms or inclusive moves"
+          },
+          {
+            "score": 1,
+            "descriptor": "Some norms stated but not revisited"
+          },
+          {
+            "score": 2,
+            "descriptor": "Active reinforcement of safe, inclusive norms"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "prior_knowledge",
+      "visible_group": "Deep Thinking & Memory",
+      "label": "Activate Prior Knowledge",
+      "definition": "Surface what learners already know to create hooks for new ideas.",
+      "why_it_matters": "New learning sticks when it can connect to existing mental models.",
+      "caution": "Unchecked misconceptions can harden; address them explicitly.",
+      "signals": [
+        "Quick brainstorms, K-W-L, or prediction prompts",
+        "Concept maps linking old and new ideas"
+      ],
+      "minimum_bar": "One structured prompt to recall related ideas.",
+      "gold_standard": "Activation + misconception check + targeted bridge to new content.",
+      "rubric": {
+        "weight": 0.07,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "No activation of prior knowledge"
+          },
+          {
+            "score": 1,
+            "descriptor": "Simple recall without misconception check"
+          },
+          {
+            "score": 2,
+            "descriptor": "Activation with misconceptions surfaced and bridged"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "elaboration",
+      "visible_group": "Deep Thinking & Memory",
+      "label": "Elaboration & Self-Explanation",
+      "definition": "Prompt learners to explain ideas in their own words and generate connections.",
+      "why_it_matters": "Generating explanations deepens understanding and improves long-term retention.",
+      "caution": "Unfocused prompts can become fluffy; keep them targeted.",
+      "signals": [
+        "Why/how prompts after examples",
+        "Teach-back in pairs or brief write-to-learn moments"
+      ],
+      "minimum_bar": "One brief self-explanation per major idea.",
+      "gold_standard": "Frequent, targeted elaboration prompts with feedback or peer review.",
+      "rubric": {
+        "weight": 0.08,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "Only passive exposure to ideas"
+          },
+          {
+            "score": 1,
+            "descriptor": "Occasional generic elaboration prompts"
+          },
+          {
+            "score": 2,
+            "descriptor": "Regular, targeted self-explanations linked to feedback"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "prediction_error",
+      "visible_group": "Deep Thinking & Memory",
+      "label": "Prediction & Error Signals",
+      "definition": "Prompt learners to predict outcomes before revealing the answer, leveraging surprise and correction to strengthen models.",
+      "why_it_matters": "Learning rewires predictive models. Expectation–outcome gaps drive memory consolidation and insight.",
+      "caution": "Avoid 'gotcha' moments; mismatch should feel safe, not shaming.",
+      "signals": [
+        "Prediction prompts before demonstrations",
+        "Reflection on what was surprising or different"
+      ],
+      "minimum_bar": "At least one prediction–feedback cycle per core idea.",
+      "gold_standard": "Systematic use of prediction–error cycles across lessons to drive curiosity and retention.",
+      "rubric": {
+        "weight": 0.08,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "No predictions made before outcomes"
+          },
+          {
+            "score": 1,
+            "descriptor": "Occasional prediction prompts without structured reflection"
+          },
+          {
+            "score": 2,
+            "descriptor": "Regular prediction–error cycles with guided reflection"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "reflection",
+      "visible_group": "Deep Thinking & Memory",
+      "label": "Reflection",
+      "definition": "Give learners space to connect new ideas to their own experience.",
+      "why_it_matters": "Reflection helps learners make meaning and remember what matters.",
+      "caution": "Too much introspection without structure can feel vague or repetitive.",
+      "signals": [
+        "Short written or spoken reflections",
+        "End-of-activity questions like 'What stood out?'"
+      ],
+      "minimum_bar": "At least one reflection near the end.",
+      "gold_standard": "Multiple brief reflections linked to each main topic.",
+      "rubric": {
+        "weight": 0.06,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "No reflection opportunities"
+          },
+          {
+            "score": 1,
+            "descriptor": "One reflection at the end"
+          },
+          {
+            "score": 2,
+            "descriptor": "Regular guided reflections throughout"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "retrieval_practice",
+      "visible_group": "Deep Thinking & Memory",
+      "label": "Retrieval Practice",
+      "definition": "Ask learners to recall or apply ideas from memory instead of rereading them.",
+      "why_it_matters": "Actively recalling information strengthens memory and understanding.",
+      "caution": "If recall is too hard or too soon, learners can feel frustrated.",
+      "signals": [
+        "Short quizzes, check-for-understanding, or prediction prompts"
+      ],
+      "minimum_bar": "At least one recall task per main concept.",
+      "gold_standard": "Several short recall tasks spaced through the session.",
+      "rubric": {
+        "weight": 0.1,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "No recall tasks"
+          },
+          {
+            "score": 1,
+            "descriptor": "One basic recall moment"
+          },
+          {
+            "score": 2,
+            "descriptor": "Multiple spaced recall activities"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "accessible",
+      "visible_group": "Focus & Flow",
+      "label": "Accessible Design",
+      "definition": "Design materials and activities so everyone can participate fully.",
+      "why_it_matters": "Accessibility supports all learners and keeps focus on learning, not barriers.",
+      "caution": "Ignoring accessibility limits participation and energy.",
+      "signals": [
+        "Readable fonts, captions, and clear visuals",
+        "Multiple ways to engage (listen, read, discuss)"
+      ],
+      "minimum_bar": "Follow basic accessibility guidelines.",
+      "gold_standard": "Universal design practices applied across all materials.",
+      "rubric": {
+        "weight": 0.07,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "Major accessibility issues"
+          },
+          {
+            "score": 1,
+            "descriptor": "Partially accessible materials"
+          },
+          {
+            "score": 2,
+            "descriptor": "Fully accessible and inclusive design"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "architecture_coverage",
+      "visible_group": "Focus & Flow",
+      "label": "Architecture Coverage (Meta)",
+      "definition": "Evaluate how the container architecture balances different learning modes across the library.",
+      "why_it_matters": "A diverse set of containers helps facilitators build experiences that balance challenge, reflection, collaboration, and recovery.",
+      "caution": "If most containers use the same learning mode, future programs may feel repetitive or fatiguing.",
+      "signals": [
+        "Variety of container types (analysis, reflection, simulation, collaboration)",
+        "Different cognitive and social energy demands represented"
+      ],
+      "minimum_bar": "Includes at least two contrasting learning modes.",
+      "gold_standard": "Offers a rich, balanced mix of container types supporting multiple learning outcomes.",
+      "rubric": {
+        "weight": 0.1,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "Narrow set of container types"
+          },
+          {
+            "score": 1,
+            "descriptor": "Some variety but uneven balance"
+          },
+          {
+            "score": 2,
+            "descriptor": "Balanced architecture with multiple learning modes"
+          }
+        ]
+      },
+      "internal_tags": [
+        "architecture-level"
+      ],
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "cognitive_offloading",
+      "visible_group": "Focus & Flow",
+      "label": "Cognitive Offloading & Externalization",
+      "definition": "Support learners in using physical or digital tools to externalize complex reasoning and reduce working memory load.",
+      "why_it_matters": "Thinking is distributed—external supports make mental models visible and improvable.",
+      "caution": "Over-scaffolded tools can discourage internalization; fade support over time.",
+      "signals": [
+        "Use of notes, diagrams, or physical models during tasks",
+        "Shared artifacts that capture reasoning, not just answers"
+      ],
+      "minimum_bar": "Learners externalize at least one reasoning step.",
+      "gold_standard": "Systematic offloading with visible iteration of artifacts across the learning process.",
+      "rubric": {
+        "weight": 0.07,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "No externalization encouraged"
+          },
+          {
+            "score": 1,
+            "descriptor": "Ad hoc use of tools without plan to fade"
+          },
+          {
+            "score": 2,
+            "descriptor": "Planned externalization with fade toward internalization"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "dual_coding",
+      "visible_group": "Focus & Flow",
+      "label": "Dual Coding & Signaling",
+      "definition": "Pair words with well-designed visuals and cue where to focus.",
+      "why_it_matters": "Aligned visual–verbal channels and cues reduce overload and aid recall.",
+      "caution": "Decorative graphics and cluttered slides create noise; keep it purposeful.",
+      "signals": [
+        "Diagrams aligned to narration",
+        "Visual signals (arrows/highlights) for key steps"
+      ],
+      "minimum_bar": "Key visuals support—not repeat—text.",
+      "gold_standard": "Consistent signaling and visual conventions across materials.",
+      "rubric": {
+        "weight": 0.06,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "Text-heavy with distracting visuals"
+          },
+          {
+            "score": 1,
+            "descriptor": "Some useful visuals, limited signaling"
+          },
+          {
+            "score": 2,
+            "descriptor": "Clear visuals with strong signaling and alignment"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "dynamic_scheduling",
+      "visible_group": "Focus & Flow",
+      "label": "Dynamic Scheduling",
+      "definition": "Plan the session around natural energy highs and lows.",
+      "why_it_matters": "Mixing high- and low-energy activities keeps learners engaged longer.",
+      "caution": "Too many high-energy tasks back-to-back cause fatigue.",
+      "signals": [
+        "High-focus work earlier, lighter reflection later",
+        "Alternation between input, activity, and discussion"
+      ],
+      "minimum_bar": "No single lecture or heavy block over 20 minutes.",
+      "gold_standard": "Balanced rhythm of activities that support attention and stamina.",
+      "rubric": {
+        "weight": 0.07,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "Monotonous or tiring sequence"
+          },
+          {
+            "score": 1,
+            "descriptor": "Some alternation of task types"
+          },
+          {
+            "score": 2,
+            "descriptor": "Clearly balanced flow of focus and rest"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "embodied_regulation",
+      "visible_group": "Focus & Flow",
+      "label": "Embodied Regulation",
+      "definition": "Intentionally manage physiological readiness (movement, breath, breaks, nutrition cues) to optimize attention and learning.",
+      "why_it_matters": "Interoceptive state shapes cognition and emotion; regulated bodies learn better.",
+      "caution": "Be inclusive of differing abilities and contexts; offer options not mandates.",
+      "signals": [
+        "Short movement/breath resets tied to task transitions",
+        "Guidance for pacing and micro-breaks"
+      ],
+      "minimum_bar": "One intentional regulation practice per session.",
+      "gold_standard": "Integrated regulation micro-practices aligned with cognitive load across the session.",
+      "rubric": {
+        "weight": 0.05,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "No attention to physiological readiness"
+          },
+          {
+            "score": 1,
+            "descriptor": "Occasional generic breaks"
+          },
+          {
+            "score": 2,
+            "descriptor": "Planned, inclusive regulation tied to task demands"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "energy_balance",
+      "visible_group": "Focus & Flow",
+      "label": "Energy Balance",
+      "definition": "Design the session so mental and physical energy are managed over time.",
+      "why_it_matters": "Sustaining attention uses real energy; alternating demand and recovery keeps performance high.",
+      "caution": "Long, uninterrupted focus blocks drain energy and reduce retention.",
+      "signals": [
+        "High-demand activities spaced with lighter tasks or short resets",
+        "No more than 20–25 minutes of new input without a pause or interaction"
+      ],
+      "minimum_bar": "Include a short recovery or low-effort activity about every 30 minutes.",
+      "gold_standard": "Smooth rhythm alternating challenge and recovery with mindful transitions.",
+      "rubric": {
+        "weight": 0.08,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "Long periods of high effort with no recovery"
+          },
+          {
+            "score": 1,
+            "descriptor": "Some alternation between heavy and light tasks"
+          },
+          {
+            "score": 2,
+            "descriptor": "Balanced rhythm of effort and recovery"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "intentional_breaks",
+      "visible_group": "Focus & Flow",
+      "label": "Intentional Breaks",
+      "definition": "Short, planned pauses that help learners rest and reset attention.",
+      "why_it_matters": "Brief breaks let the brain recover, keeping focus and energy high.",
+      "caution": "Too long or unfocused breaks can make it hard to restart.",
+      "signals": [
+        "Regular short breaks are scheduled (every 25–30 minutes)",
+        "Breaks have a clear purpose (stretch, reflect, hydrate)"
+      ],
+      "minimum_bar": "At least one planned break per hour.",
+      "gold_standard": "Purposeful 3–5 minute breaks that help learners recharge and refocus.",
+      "rubric": {
+        "weight": 0.08,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "No scheduled breaks"
+          },
+          {
+            "score": 1,
+            "descriptor": "One generic break"
+          },
+          {
+            "score": 2,
+            "descriptor": "Regular purposeful breaks"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "novelty_attention",
+      "visible_group": "Focus & Flow",
+      "label": "Novelty & Contextual Surprise",
+      "definition": "Use controlled novelty and contextual variation to maintain attention and stimulate encoding.",
+      "why_it_matters": "The brain prioritizes change; novelty boosts attention and memory consolidation.",
+      "caution": "Too much surprise creates distraction—moderate and purposeful use.",
+      "signals": [
+        "Pattern breaks in content or format that highlight key moments",
+        "Emotional or sensory shifts to mark transitions"
+      ],
+      "minimum_bar": "At least one deliberate novelty cue per learning sequence.",
+      "gold_standard": "Curated novelty pacing that supports engagement without overload.",
+      "rubric": {
+        "weight": 0.06,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "Flat, repetitive presentation"
+          },
+          {
+            "score": 1,
+            "descriptor": "Occasional novelty without clear purpose"
+          },
+          {
+            "score": 2,
+            "descriptor": "Purposeful novelty aligned to key learning moments"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "simplify_content",
+      "visible_group": "Focus & Flow",
+      "label": "Simplify Content",
+      "definition": "Keep materials clear and focused on the key ideas.",
+      "why_it_matters": "Clear, simple materials reduce mental overload and help people stay with you.",
+      "caution": "If it’s too simple, learners may get bored or disengaged.",
+      "signals": [
+        "Plain language used",
+        "One main idea per slide or activity"
+      ],
+      "minimum_bar": "Most content uses simple, clear language.",
+      "gold_standard": "Every section focuses on one main idea with a clear next step.",
+      "rubric": {
+        "weight": 0.06,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "Dense or confusing materials"
+          },
+          {
+            "score": 1,
+            "descriptor": "Mostly clear but some clutter"
+          },
+          {
+            "score": 2,
+            "descriptor": "Consistently simple and focused"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "goal_clarity",
+      "visible_group": "Self & Transfer",
+      "label": "Goal Clarity & Success Criteria",
+      "definition": "Make outcomes and examples of quality explicit before practice begins.",
+      "why_it_matters": "Clear goals and criteria focus attention, align feedback, and speed skill acquisition.",
+      "caution": "Vague or shifting targets reduce motivation and make feedback less useful.",
+      "signals": [
+        "Outcomes stated in plain language",
+        "Concrete exemplars and non-exemplars shown"
+      ],
+      "minimum_bar": "Learners can restate goals and name what 'good' looks like.",
+      "gold_standard": "Explicit goals with exemplars, co-created success criteria, and frequent check-ins.",
+      "rubric": {
+        "weight": 0.09,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "Unclear or implicit goals"
+          },
+          {
+            "score": 1,
+            "descriptor": "Goals stated but criteria spotty"
+          },
+          {
+            "score": 2,
+            "descriptor": "Clear goals + rich exemplars + shared criteria"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "metacognition",
+      "visible_group": "Self & Transfer",
+      "label": "Metacognition",
+      "definition": "Encourage learners to think about how they learn and track their progress.",
+      "why_it_matters": "When people notice how they learn, they can plan, adjust, and stay motivated.",
+      "caution": "Too much analysis can feel abstract without concrete action steps.",
+      "signals": [
+        "Prompts like 'What helped you learn this?'",
+        "Self-check or planning tasks"
+      ],
+      "minimum_bar": "One short reflection on learning process.",
+      "gold_standard": "Regular moments for learners to plan, monitor, and adjust.",
+      "rubric": {
+        "weight": 0.06,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "No reflection on learning process"
+          },
+          {
+            "score": 1,
+            "descriptor": "One self-reflection moment"
+          },
+          {
+            "score": 2,
+            "descriptor": "Frequent prompts to plan and self-assess"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "spacing_interleaving",
+      "visible_group": "Self & Transfer",
+      "label": "Spaced & Interleaved Practice",
+      "definition": "Revisit key skills across time and mix related topics to strengthen retention and discrimination.",
+      "why_it_matters": "Spacing and interleaving create desirable difficulties that boost long-term learning.",
+      "caution": "Too much spacing without quick wins can feel discouraging—signal the why.",
+      "signals": [
+        "Planned revisits of core ideas across sessions",
+        "Mixed practice sets instead of single-topic blocks"
+      ],
+      "minimum_bar": "At least one scheduled revisit of each core concept.",
+      "gold_standard": "Systematic spacing schedule with interleaved practice and brief refreshers.",
+      "rubric": {
+        "weight": 0.1,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "One-and-done topics"
+          },
+          {
+            "score": 1,
+            "descriptor": "Occasional revisits or mixed practice"
+          },
+          {
+            "score": 2,
+            "descriptor": "Consistent spacing + interleaving across the program"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "transfer_application",
+      "visible_group": "Self & Transfer",
+      "label": "Transfer & Real-World Application",
+      "definition": "Design tasks that require applying learning to authentic contexts.",
+      "why_it_matters": "Deliberate bridges from training to work increase far transfer.",
+      "caution": "If contexts feel contrived, motivation drops—use realistic constraints.",
+      "signals": [
+        "Scenarios or simulations mapped to actual workflows",
+        "Action plans with next-week commitments"
+      ],
+      "minimum_bar": "One realistic application task with debrief.",
+      "gold_standard": "Progressive simulations + on-the-job experiments with follow-up feedback.",
+      "rubric": {
+        "weight": 0.09,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "Abstract practice only"
+          },
+          {
+            "score": 1,
+            "descriptor": "One realistic task, limited follow-through"
+          },
+          {
+            "score": 2,
+            "descriptor": "Authentic tasks with tracked transfer and feedback"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    },
+    {
+      "id": "neuroinclusive_design",
+      "visible_group": "Focus & Flow",
+      "label": "Neuroinclusive Design",
+      "definition": "Design experiences that acknowledge neurodiversity and give people different ways to focus, contribute, and learn.",
+      "why_it_matters": "Teams include many kinds of thinkers. Building in choice and clarity helps everyone perform at their best.",
+      "caution": "Uniform, fast-paced delivery can make it harder for some colleagues to participate fully.",
+      "signals": [
+        "Content offered in more than one format (visuals, discussion, reading, reflection)",
+        "Clear structure with flexible pacing or participation",
+        "Opportunities for both quiet and interactive engagement"
+      ],
+      "minimum_bar": "Some variety in engagement format or pacing.",
+      "gold_standard": "Deliberate flexibility and clarity that let people with diverse attention and communication styles succeed.",
+      "rubric": {
+        "weight": 0.07,
+        "levels": [
+          {
+            "score": 0,
+            "descriptor": "One fixed, high-speed delivery style"
+          },
+          {
+            "score": 1,
+            "descriptor": "Some variation in format or pacing"
+          },
+          {
+            "score": 2,
+            "descriptor": "Consistent flexibility that supports neurodiverse participation"
+          }
+        ]
+      },
+      "detection_hooks": {
+        "duration_min": null,
+        "social_mode": [],
+        "scaffold_level": null,
+        "energy_block_rule": null
+      },
+      "micro_upgrade": "Add a specific, 2–3 minute tweak at the weak point (e.g., prediction prompt or criteria slide).",
+      "status_rubric": {
+        "Strong": "Clear, repeated evidence across activities",
+        "Partial": "Evidence appears once or lacks clarity/criteria",
+        "Missing": "No observable evidence in timeline/deck"
+      }
+    }
+  ],
+  "templates": [
+    {
+      "id": "coaching_loop_template",
+      "type": "container_template",
+      "label": "Coaching Loop",
+      "enabled_by_default": false,
+      "description": "A structured model–practice–feedback–plan cycle used for skill coaching and deliberate practice sessions.",
+      "show_if": {
+        "any": [
+          {
+            "role_present": "coach"
+          },
+          {
+            "modality_in": [
+              "live_session",
+              "1:1"
+            ]
+          },
+          {
+            "practice_reps_at_least": 2
+          }
+        ]
+      },
+      "suggest_if": {
+        "all": [
+          {
+            "principle_present": "feedback"
+          },
+          {
+            "principle_present": "worked_examples"
+          }
+        ]
+      },
+      "compose_of_principles": [
+        "goal_clarity",
+        "worked_examples",
+        "prediction_error",
+        "transfer_application",
+        "feedback",
+        "reflection"
+      ],
+      "phases": [
+        {
+          "label": "Model",
+          "purpose": "Demonstrate expert performance and thinking aloud."
+        },
+        {
+          "label": "Try",
+          "purpose": "Learner performs with partial guidance or scaffolds."
+        },
+        {
+          "label": "Feedback",
+          "purpose": "Facilitator or peers provide targeted, timely feedback."
+        },
+        {
+          "label": "Plan Next Rep",
+          "purpose": "Learner reflects and sets a goal for the next iteration."
+        }
+      ],
+      "tags": [
+        "coaching",
+        "deliberate_practice"
+      ]
+    }
+  ]
+}

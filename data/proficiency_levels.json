@@ -1,0 +1,82 @@
+{
+  "title": "Dreyfus Model of Skill Acquisition — Proficiency Levels",
+  "description": "Reference definitions for the five proficiency levels used across all skills and building blocks. Each level describes a qualitative shift in how the performer perceives, decides, and acts — not just an increase in knowledge or speed.",
+  "source_model": "Dreyfus & Dreyfus (1980), adapted for management consulting expertise development",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Novice",
+      "subtitle": "Context-free rule-following",
+      "description": "The performer relies on explicit rules, templates, and step-by-step instructions. Decisions are made by following prescribed procedures without adapting to context. The performer cannot yet distinguish what is relevant from what is irrelevant in a situation and treats all information with equal weight.",
+      "general_characteristics": [
+        "Follows provided frameworks, checklists, or templates without modification",
+        "Needs explicit instructions to begin and complete tasks",
+        "Cannot yet prioritise — treats all elements of a situation as equally important",
+        "Struggles to recognise when a rule or template does not fit the situation",
+        "Depends on others to evaluate the quality of their own work"
+      ],
+      "relationship_to_practice": "Practice activities at this level should provide clear structure, worked examples, and immediate feedback. The goal is to build familiarity with foundational tools and vocabulary, not to develop judgment.",
+      "what_distinguishes_this_level": "The performer can execute a procedure but cannot explain why it works or when it would not apply."
+    },
+    {
+      "level": 2,
+      "name": "Advanced Beginner",
+      "subtitle": "Situational recognition",
+      "description": "The performer begins to notice recurring patterns and situational cues from their own experience. They can recognise when something feels familiar or unfamiliar but still need guidance to interpret what those signals mean. Rules are supplemented by emerging situational awareness, though the performer defaults to rules when uncertain.",
+      "general_characteristics": [
+        "Recognises familiar patterns and begins to adapt behaviour based on context",
+        "Notices when something does not fit the standard approach but needs help deciding what to do",
+        "Can perform independently in familiar situations but requires support in novel ones",
+        "Begins to distinguish important from unimportant information, though inconsistently",
+        "Defaults to the most familiar approach when under pressure or ambiguity"
+      ],
+      "relationship_to_practice": "Practice activities at this level should introduce variation and comparison — helping the performer notice differences between situations and begin to develop situational judgment. Coaching should highlight what cues to attend to.",
+      "what_distinguishes_this_level": "The performer sees that context matters but cannot yet reliably read the context without help."
+    },
+    {
+      "level": 3,
+      "name": "Competent",
+      "subtitle": "Deliberate & effortful",
+      "description": "The performer sets goals, makes plans, and takes deliberate action based on a conscious assessment of the situation. Decision-making is analytical and effortful — the performer considers multiple factors, weighs trade-offs, and can articulate the rationale behind their choices. Performance is reliable but not yet fluid.",
+      "general_characteristics": [
+        "Sets priorities and makes plans based on a deliberate assessment of the situation",
+        "Makes trade-off decisions and can articulate the reasoning behind them",
+        "Takes responsibility for outcomes — feels satisfaction from success and concern from failure",
+        "Applies methods flexibly, selecting and adapting approaches to fit the problem",
+        "Performance is competent and consistent but still requires conscious effort and concentration"
+      ],
+      "relationship_to_practice": "Practice activities at this level should involve realistic complexity, competing priorities, and incomplete information. The performer benefits from structured reflection on their decision-making process, not just the outcome.",
+      "what_distinguishes_this_level": "The performer makes good decisions through deliberate analysis but has not yet internalised the judgment to do so fluidly."
+    },
+    {
+      "level": 4,
+      "name": "Proficient",
+      "subtitle": "Intuitive perception",
+      "description": "The performer perceives situations holistically and intuitively — they see what matters without having to consciously analyse each element. Pattern recognition is fast and accurate. The performer still makes deliberate decisions about what to do, but the assessment of the situation is largely intuitive rather than analytical.",
+      "general_characteristics": [
+        "Reads situations holistically — sees patterns and priorities without step-by-step analysis",
+        "Intuitively senses when something is off and investigates before it becomes a visible problem",
+        "Draws on deep experience to assess situations rapidly and accurately",
+        "Adapts approach fluidly based on real-time feedback from the environment",
+        "Focuses analytical effort on the few decisions that genuinely require deliberation"
+      ],
+      "relationship_to_practice": "Practice activities at this level should present high-stakes, ambiguous, or rapidly evolving situations that test intuition and real-time adaptation. Coaching should focus on calibrating judgment and exploring the reasoning behind intuitive reads.",
+      "what_distinguishes_this_level": "The performer sees the situation intuitively but still decides what to do analytically — perception is fluid, action is still deliberate."
+    },
+    {
+      "level": 5,
+      "name": "Expert",
+      "subtitle": "Holistic & fluid",
+      "description": "The performer perceives, decides, and acts as a unified, fluid response to the situation. There is no separation between assessment and action — the right response emerges naturally from deep experience. The expert sees possibilities others miss, creates novel approaches for unprecedented situations, and their practice itself becomes a reference model for others.",
+      "general_characteristics": [
+        "Perceives, decides, and acts fluidly — the right response emerges without conscious deliberation",
+        "Sees connections, patterns, and possibilities that others miss entirely",
+        "Creates novel approaches for unprecedented problems that become models for others",
+        "Performance is so integrated that it appears effortless to observers",
+        "Elevates the capability of those around them through the quality and visibility of their practice"
+      ],
+      "relationship_to_practice": "At this level, development comes from novel challenges, cross-domain application, and teaching or mentoring others. The expert benefits from reflecting on their own intuition and making it visible for others to learn from.",
+      "what_distinguishes_this_level": "The performer no longer separates knowing from doing — expertise is fully embodied and generative."
+    }
+  ]
+}
