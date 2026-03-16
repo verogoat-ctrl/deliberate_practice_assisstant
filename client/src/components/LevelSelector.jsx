@@ -27,7 +27,6 @@ export default function LevelSelector({ levels, selected, onChange }) {
             >
               <span className="font-semibold">Level {lvl.level}:</span>{" "}
               {lvl.name}
-              <span className="text-gray-400 ml-1">— {lvl.subtitle}</span>
             </button>
           );
         })}

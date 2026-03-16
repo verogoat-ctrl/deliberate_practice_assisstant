@@ -20,13 +20,9 @@ export default function SkillSelector({ data, selected, onChange }) {
         </span>
       </label>
 
-      {competencies.map((comp) => (
-        <div key={comp.competency_number} className="mb-3">
-          <p className="text-xs font-semibold tracking-wide text-gray-400 uppercase mb-1.5">
-            {comp.competency_name}
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {comp.skills.map((skill) => {
+      <div className="flex flex-wrap gap-2">
+        {competencies.flatMap((comp) =>
+          comp.skills.map((skill) => {
               const active = selected.includes(skill.skill_name);
               const disabled = !active && selected.length >= MAX_SKILLS;
               return (
@@ -49,10 +45,9 @@ export default function SkillSelector({ data, selected, onChange }) {
                   {skill.skill_name}
                 </button>
               );
-            })}
-          </div>
-        </div>
-      ))}
+          })
+        )}
+      </div>
     </div>
   );
 }
