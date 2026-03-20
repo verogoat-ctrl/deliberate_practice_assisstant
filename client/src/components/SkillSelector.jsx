@@ -1,53 +1,54 @@
-const MAX_SKILLS = 2;
+import { useMemo } from "react";
+import styled from "@emotion/styled";
+import { Typography, Button } from "@mds/mds-reactjs-library";
 
-export default function SkillSelector({ data, selected, onChange }) {
-  const competencies = data?.competencies || [];
+const Stack = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+`;
+
+export default function SkillSelector({ data, selected, onChange, maxSkills = 2 }) {
+  const uniqueSkills = useMemo(
+    () => [...new Set((data || []).map((bb) => bb.ldm_skill))],
+    [data]
+  );
 
   function toggle(skillName) {
     if (selected.includes(skillName)) {
       onChange(selected.filter((s) => s !== skillName));
-    } else if (selected.length < MAX_SKILLS) {
+    } else if (selected.length < maxSkills) {
       onChange([...selected, skillName]);
     }
   }
 
   return (
     <div>
-      <label className="block text-sm font-semibold text-gray-700 mb-1">
-        Skills
-        <span className="ml-1 font-normal text-gray-400">
-          (select 1–{MAX_SKILLS})
+      <Typography type="body-sm" component="label" style={{ fontWeight: 600, color: "#374151", marginBottom: 4, display: "block" }}>
+        Skill{" "}
+        <span style={{ fontWeight: 400, color: "#9ca3af" }}>
+          (select 1–{maxSkills})
         </span>
-      </label>
+      </Typography>
 
-      <div className="flex flex-wrap gap-2">
-        {competencies.flatMap((comp) =>
-          comp.skills.map((skill) => {
-              const active = selected.includes(skill.skill_name);
-              const disabled = !active && selected.length >= MAX_SKILLS;
-              return (
-                <button
-                  key={skill.skill_name}
-                  type="button"
-                  onClick={() => toggle(skill.skill_name)}
-                  disabled={disabled}
-                  className={`
-                    px-3 py-1.5 rounded-full text-sm font-medium transition-colors
-                    ${
-                      active
-                        ? "bg-[var(--color-accent)] text-white"
-                        : disabled
-                          ? "bg-gray-100 text-gray-300 cursor-not-allowed"
-                          : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                    }
-                  `}
-                >
-                  {skill.skill_name}
-                </button>
-              );
-          })
-        )}
-      </div>
+      <Stack>
+        {uniqueSkills.map((skillName) => {
+          const active = selected.includes(skillName);
+          const disabled = !active && selected.length >= maxSkills;
+          return (
+            <Button
+              key={skillName}
+              appearance={active ? "primary" : "secondary"}
+              size="md"
+              disabled={disabled}
+              onClick={() => toggle(skillName)}
+              style={{ width: "100%", textAlign: "left", justifyContent: "flex-start" }}
+            >
+              {skillName}
+            </Button>
+          );
+        })}
+      </Stack>
     </div>
   );
 }

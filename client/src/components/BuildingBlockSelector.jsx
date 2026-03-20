@@ -1,31 +1,63 @@
-import { useState } from "react";
+import styled from "@emotion/styled";
+import {
+  Accordion,
+  AccordionPanel,
+  AccordionHeader,
+  Checkbox,
+  Typography,
+} from "@mds/mds-reactjs-library";
 
-const MAX_BLOCKS = 3;
+const GroupHeader = styled.p`
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 6px;
+`;
+
+const GroupWrap = styled.div`
+  margin-bottom: 12px;
+`;
+
+const StyledAccordionHeader = styled(AccordionHeader)`
+  font-size: 0.875rem;
+  text-align: left;
+  justify-content: flex-start;
+`;
+
+const CheckboxRow = styled.label`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
+  opacity: ${({ disabled }) => (disabled ? 0.5 : 1)};
+`;
+
+const DescriptionText = styled.p`
+  font-size: 0.75rem;
+  color: #6b7280;
+  white-space: pre-line;
+  line-height: 1.5;
+  padding: 8px 16px 12px;
+`;
 
 export default function BuildingBlockSelector({
   data,
   selectedSkills,
   selected,
   onChange,
+  maxBlocks = 3,
 }) {
-  const [expandedTip, setExpandedTip] = useState(null);
-  const competencies = data?.competencies || [];
-
-  const availableBlocks = competencies.flatMap((comp) =>
-    comp.skills
-      .filter((skill) => selectedSkills.includes(skill.skill_name))
-      .flatMap((skill) =>
-        skill.building_blocks.map((bb) => ({
-          ...bb,
-          skillName: skill.skill_name,
-        }))
-      )
-  );
+  const availableBlocks = (data || [])
+    .filter((bb) => selectedSkills.includes(bb.ldm_skill))
+    .map((bb) => ({ ...bb, skillName: bb.ldm_skill }));
 
   function toggle(blockId) {
     if (selected.some((b) => b.id === blockId)) {
       onChange(selected.filter((b) => b.id !== blockId));
-    } else if (selected.length < MAX_BLOCKS) {
+    } else if (selected.length < maxBlocks) {
       const block = availableBlocks.find((b) => b.id === blockId);
       if (block) onChange([...selected, block]);
     }
@@ -34,15 +66,15 @@ export default function BuildingBlockSelector({
   if (!selectedSkills.length) {
     return (
       <div>
-        <label className="block text-sm font-semibold text-gray-700 mb-1">
-          Building Blocks
-          <span className="ml-1 font-normal text-gray-400">
-            (select 1–{MAX_BLOCKS})
+        <Typography type="body-sm" component="label" style={{ fontWeight: 600, color: "#374151", marginBottom: 4, display: "block" }}>
+          Building Blocks{" "}
+          <span style={{ fontWeight: 400, color: "#9ca3af" }}>
+            (select 1–{maxBlocks})
           </span>
-        </label>
-        <p className="text-sm text-gray-400 italic">
-          Select at least one skill first.
-        </p>
+        </Typography>
+        <Typography type="body-sm" style={{ color: "#9ca3af", fontStyle: "italic" }}>
+          Select at least one competency first.
+        </Typography>
       </div>
     );
   }
@@ -55,62 +87,42 @@ export default function BuildingBlockSelector({
 
   return (
     <div>
-      <label className="block text-sm font-semibold text-gray-700 mb-1">
-        Building Blocks
-        <span className="ml-1 font-normal text-gray-400">
-          (select 1–{MAX_BLOCKS})
+      <Typography type="body-sm" component="label" style={{ fontWeight: 600, color: "#374151", marginBottom: 4, display: "block" }}>
+        Building Blocks{" "}
+        <span style={{ fontWeight: 400, color: "#9ca3af" }}>
+          (select 1–{maxBlocks})
         </span>
-      </label>
+      </Typography>
 
       {Object.entries(grouped).map(([skillName, blocks]) => (
-        <div key={skillName} className="mb-3">
-          <p className="text-xs font-semibold tracking-wide text-gray-400 uppercase mb-1.5">
-            {skillName}
-          </p>
-          <div className="flex flex-col gap-1.5">
+        <GroupWrap key={skillName}>
+          <GroupHeader>{skillName}</GroupHeader>
+          <Accordion>
             {blocks.map((bb) => {
               const active = selected.some((b) => b.id === bb.id);
-              const disabled = !active && selected.length >= MAX_BLOCKS;
-              const tipOpen = expandedTip === bb.id;
+              const disabled = !active && selected.length >= maxBlocks;
               return (
-                <div key={bb.id}>
-                  <div className="flex items-start gap-2">
-                    <button
-                      type="button"
-                      onClick={() => toggle(bb.id)}
+                <AccordionPanel key={bb.id}>
+                  <StyledAccordionHeader>
+                    <CheckboxRow
                       disabled={disabled}
-                      className={`
-                        px-3 py-1.5 rounded-full text-sm font-medium transition-colors text-left shrink-0
-                        ${
-                          active
-                            ? "bg-[var(--color-accent)] text-white"
-                            : disabled
-                              ? "bg-gray-100 text-gray-300 cursor-not-allowed"
-                              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                        }
-                      `}
+                      onClick={(e) => e.stopPropagation()}
                     >
-                      {bb.id} {bb.building_block}
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setExpandedTip(tipOpen ? null : bb.id)}
-                      className="text-gray-400 hover:text-gray-600 text-xs mt-1.5 shrink-0"
-                      title="Show description"
-                    >
-                      {tipOpen ? "hide" : "info"}
-                    </button>
-                  </div>
-                  {tipOpen && (
-                    <p className="text-xs text-gray-500 mt-1 ml-3 whitespace-pre-line leading-relaxed">
-                      {bb.description}
-                    </p>
-                  )}
-                </div>
+                      <Checkbox
+                        value={bb.id}
+                        checked={active}
+                        disabled={disabled}
+                        onChange={() => toggle(bb.id)}
+                      />
+                      <span>{bb.id} {bb.building_block}</span>
+                    </CheckboxRow>
+                  </StyledAccordionHeader>
+                  <DescriptionText>{bb.description}</DescriptionText>
+                </AccordionPanel>
               );
             })}
-          </div>
-        </div>
+          </Accordion>
+        </GroupWrap>
       ))}
     </div>
   );

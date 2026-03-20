@@ -1,20 +1,163 @@
 import { useState } from "react";
+import styled from "@emotion/styled";
+import {
+  Badge,
+  Button,
+  Typography,
+  List as MdsList,
+  ListItem,
+} from "@mds/mds-reactjs-library";
 
-function ChevronIcon({ open }) {
-  return (
-    <svg
-      className={`w-4 h-4 transition-transform ${open ? "rotate-90" : ""}`}
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth={2}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-    </svg>
-  );
-}
+/* ── styled helpers ── */
 
-function CopyButtons({ jsonData, textData, label }) {
+const SectionStack = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
+
+const SectionCard = styled.div`
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+`;
+
+const SectionTitle = styled.div`
+  background: #f9fafb;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: #1f2937;
+  border-bottom: 1px solid #e5e7eb;
+`;
+
+const SubSectionTitle = styled.div`
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #374151;
+  padding: 12px 0 4px;
+  margin-top: 16px;
+  border-top: 1px solid #f3f4f6;
+`;
+
+const CopyRow = styled.div`
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+`;
+
+const FieldWrap = styled.div`
+  margin-top: 12px;
+`;
+
+const FieldLabel = styled.dt`
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+`;
+
+const FieldValue = styled.dd`
+  font-size: 0.875rem;
+  color: #374151;
+  line-height: 1.6;
+`;
+
+
+const CriterionCard = styled.div`
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+`;
+
+const CriterionHeader = styled.div`
+  background: #f9fafb;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #1f2937;
+`;
+
+const RubricGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+`;
+
+const RubricCell = styled.div`
+  padding: 12px 16px;
+  border-top: 1px solid #f3f4f6;
+  @media (min-width: 768px) {
+    border-top: none;
+    &:not(:first-of-type) {
+      border-left: 1px solid #f3f4f6;
+    }
+  }
+`;
+
+const RubricLabel = styled.p`
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  color: ${(props) => props.color || "#6b7280"};
+`;
+
+const CoachingTip = styled.div`
+  padding: 8px 16px;
+  background: #fffbeb;
+  border-top: 1px solid #f3f4f6;
+  font-size: 0.75rem;
+  color: #92400e;
+`;
+
+const CriteriaStack = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+`;
+
+
+const TransferCard = styled.div`
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+`;
+
+const TransferTarget = styled.p`
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #1f2937;
+  margin-bottom: 8px;
+`;
+
+const MechBadgeRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 8px;
+`;
+
+const QuestionCard = styled.div`
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+  color: #374151;
+  line-height: 1.6;
+`;
+
+/* ── copy helpers ── */
+
+function CopyButtons({ jsonData, textData }) {
   const [copied, setCopied] = useState(null);
 
   async function copy(content, type) {
@@ -24,83 +167,80 @@ function CopyButtons({ jsonData, textData, label }) {
   }
 
   return (
-    <div className="flex gap-2">
-      <button
+    <CopyRow>
+      <Button
+        appearance="tertiary"
+        size="sm"
         onClick={() => copy(JSON.stringify(jsonData, null, 2), "json")}
-        className="text-xs px-2 py-1 rounded border border-gray-200 text-gray-500 hover:bg-gray-50 transition-colors"
       >
         {copied === "json" ? "Copied!" : "Copy JSON"}
-      </button>
-      <button
+      </Button>
+      <Button
+        appearance="tertiary"
+        size="sm"
         onClick={() => copy(textData, "text")}
-        className="text-xs px-2 py-1 rounded border border-gray-200 text-gray-500 hover:bg-gray-50 transition-colors"
       >
         {copied === "text" ? "Copied!" : "Copy as Text"}
-      </button>
-    </div>
+      </Button>
+    </CopyRow>
   );
 }
 
-function Section({ title, defaultOpen = true, children, jsonData, textData }) {
-  const [open, setOpen] = useState(defaultOpen);
-
-  return (
-    <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
-      <button
-        type="button"
-        onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors"
-      >
-        <h3 className="text-base font-semibold text-gray-800">{title}</h3>
-        <div className="flex items-center gap-3">
-          {open && (
-            <span onClick={(e) => e.stopPropagation()}>
-              <CopyButtons jsonData={jsonData} textData={textData} />
-            </span>
-          )}
-          <ChevronIcon open={open} />
-        </div>
-      </button>
-      {open && <div className="px-5 pb-5 border-t border-gray-100">{children}</div>}
-    </div>
-  );
-}
+/* ── shared components ── */
 
 function Field({ label, children }) {
   return (
-    <div className="mt-3">
-      <dt className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">
-        {label}
-      </dt>
-      <dd className="text-sm text-gray-700 leading-relaxed">{children}</dd>
-    </div>
+    <FieldWrap>
+      <FieldLabel>{label}</FieldLabel>
+      <FieldValue>{children}</FieldValue>
+    </FieldWrap>
   );
 }
 
-function List({ items }) {
+const StyledList = styled(MdsList)`
+  font-size: 0.875rem;
+  line-height: 1.6;
+
+  li,
+  li > * {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+`;
+
+function BulletList({ items }) {
   return (
-    <ul className="list-disc list-inside space-y-0.5">
+    <StyledList ordered={false} indented>
       {items.map((item, i) => (
-        <li key={i} className="text-sm text-gray-700">
+        <ListItem key={i}>
           {typeof item === "string" ? item : JSON.stringify(item)}
-        </li>
+        </ListItem>
       ))}
-    </ul>
+    </StyledList>
   );
 }
 
-function Badge({ children, variant = "default" }) {
-  const styles = {
-    default: "bg-gray-100 text-gray-600",
-    accent: "bg-[var(--color-accent-light)] text-[var(--color-accent)]",
-  };
-  return (
-    <span
-      className={`inline-block text-xs font-medium px-2 py-0.5 rounded-full ${styles[variant]}`}
-    >
-      {children}
-    </span>
-  );
+/* ── text serializers ── */
+
+function skeletonToText(sk) {
+  return [
+    "CASE SKELETON",
+    `\nProblem Type: ${sk.problem_type}`,
+    `\nInformation Characteristics:\n${sk.information_characteristics.map((c) => `  - ${c}`).join("\n")}`,
+    `\nCognitive Demand: ${sk.cognitive_demand}`,
+    `\nComplexity Dimensions:\n${sk.complexity_dimensions.map((d) => `  - ${d}`).join("\n")}`,
+    `\nSituational Constraints:\n${sk.situational_constraints.map((c) => `  - ${c}`).join("\n")}`,
+  ].join("\n");
+}
+
+function proficiencyGapToText(gaps) {
+  return [
+    "PROFICIENCY GAP",
+    ...gaps.map(
+      (g) =>
+        `\n${g.building_block_name} (${g.building_block_id}) — Level ${g.current_level} → ${g.next_level}:\n${g.gap_description}`
+    ),
+  ].join("\n");
 }
 
 function practiceToText(pa) {
@@ -117,19 +257,15 @@ function practiceToText(pa) {
 }
 
 function scenarioToText(sc) {
-  return [
+  const parts = [
     `SCENARIO: ${sc.title}`,
-    `\nClient Context: ${sc.client_context}`,
-    `\nSituation: ${sc.situation}`,
+    `\nContext: ${sc.context}`,
     `\nComplication: ${sc.complication}`,
-    `\nKey Characters:`,
-    ...sc.key_characters.map(
-      (c) =>
-        `  - ${c.role}: ${c.perspective} (Behavior: ${c.relevant_behavior})`
-    ),
-    `\nConstraints:\n${sc.constraints.map((c) => `  - ${c}`).join("\n")}`,
-    `\nAvailable Data/Artifacts:\n${sc.available_data_or_artifacts.map((a) => `  - ${a}`).join("\n")}`,
-  ].join("\n");
+  ];
+  if (sc.available_data_artifacts?.length) {
+    parts.push(`\nAvailable Data / Artifacts:\n${sc.available_data_artifacts.map((a) => `  - ${a}`).join("\n")}`);
+  }
+  return parts.join("\n");
 }
 
 function rubricToText(ar) {
@@ -146,27 +282,81 @@ function rubricToText(ar) {
   ].join("\n");
 }
 
+function metacognitionToText(r) {
+  return [
+    "SELF-ASSESSMENT QUESTIONS",
+    ...r.self_assessment_questions.map((q) => `  - ${q}`),
+    "\nREFLECTION QUESTIONS",
+    ...r.reflection_questions.map((q) => `  - ${q}`),
+    "\nCOACHING QUESTIONS",
+    ...r.coaching_questions.map((q) => `  - ${q}`),
+  ].join("\n");
+}
+
+function transferToText(r) {
+  return [
+    `SHARED MECHANISMS\n${r.shared_mechanisms_summary}`,
+    ...r.transfer_activities.map(
+      (ta) =>
+        `\nTRANSFER: ${ta.target_block_name} (${ta.target_block_id})\nShared: ${ta.shared_mechanisms.join(", ")}\nActivity: ${ta.activity}\nRationale: ${ta.rationale}`
+    ),
+  ].join("\n");
+}
+
+/* ── Mode 1 views ── */
+
+function CaseSkeletonView({ data }) {
+  return (
+    <dl>
+      <Field label="Problem Type">
+        <p style={{ whiteSpace: "pre-line" }}>{data.problem_type}</p>
+      </Field>
+      <Field label="Information Characteristics">
+        <BulletList items={data.information_characteristics} />
+      </Field>
+      <Field label="Cognitive Demand">
+        <p style={{ whiteSpace: "pre-line" }}>{data.cognitive_demand}</p>
+      </Field>
+      <Field label="Complexity Dimensions">
+        <BulletList items={data.complexity_dimensions} />
+      </Field>
+      <Field label="Situational Constraints">
+        <BulletList items={data.situational_constraints} />
+      </Field>
+    </dl>
+  );
+}
+
+function ProficiencyGapView({ data }) {
+  return (
+    <dl>
+      {data.map((g) => (
+        <Field
+          key={g.building_block_id}
+          label={`${g.building_block_id} ${g.building_block_name} — Level ${g.current_level} → ${g.next_level}`}
+        >
+          <p style={{ whiteSpace: "pre-line" }}>{g.gap_description}</p>
+        </Field>
+      ))}
+    </dl>
+  );
+}
+
 function PracticeActivityView({ data }) {
   return (
     <dl>
       <Field label="Objective">{data.objective}</Field>
       <Field label="Setup">
-        <p className="whitespace-pre-line">{data.setup}</p>
+        <p style={{ whiteSpace: "pre-line" }}>{data.setup}</p>
       </Field>
       <Field label="Instructions">
-        <p className="whitespace-pre-line">{data.instructions}</p>
+        <p style={{ whiteSpace: "pre-line" }}>{data.instructions}</p>
       </Field>
       <Field label="Debrief Prompts">
-        <List items={data.debrief_prompts} />
+        <BulletList items={data.debrief_prompts} />
       </Field>
-      <div className="flex gap-3 mt-3">
-        <Badge variant="accent">
-          {data.estimated_duration_minutes} min
-        </Badge>
-        <Badge>{data.delivery_format}</Badge>
-      </div>
       <Field label="Materials Needed">
-        <List items={data.materials_needed} />
+        <BulletList items={data.materials_needed} />
       </Field>
     </dl>
   );
@@ -175,36 +365,17 @@ function PracticeActivityView({ data }) {
 function ScenarioView({ data }) {
   return (
     <dl>
-      <Field label="Client Context">{data.client_context}</Field>
-      <Field label="Situation">
-        <p className="whitespace-pre-line">{data.situation}</p>
+      <Field label="Context">
+        <p style={{ whiteSpace: "pre-line" }}>{data.context}</p>
       </Field>
       <Field label="Complication">
-        <p className="whitespace-pre-line">{data.complication}</p>
+        <p style={{ whiteSpace: "pre-line" }}>{data.complication}</p>
       </Field>
-      <Field label="Key Characters">
-        <div className="space-y-2 mt-1">
-          {data.key_characters.map((char, i) => (
-            <div key={i} className="bg-gray-50 rounded-lg p-3 text-sm">
-              <p className="font-semibold text-gray-800">{char.role}</p>
-              <p className="text-gray-600 mt-0.5">
-                <span className="text-gray-400">Perspective:</span>{" "}
-                {char.perspective}
-              </p>
-              <p className="text-gray-600 mt-0.5">
-                <span className="text-gray-400">Behavior:</span>{" "}
-                {char.relevant_behavior}
-              </p>
-            </div>
-          ))}
-        </div>
-      </Field>
-      <Field label="Constraints">
-        <List items={data.constraints} />
-      </Field>
-      <Field label="Available Data / Artifacts">
-        <List items={data.available_data_or_artifacts} />
-      </Field>
+      {data.available_data_artifacts?.length > 0 && (
+        <Field label="Available Data / Artifacts">
+          <BulletList items={data.available_data_artifacts} />
+        </Field>
+      )}
     </dl>
   );
 }
@@ -214,91 +385,219 @@ function RubricView({ data }) {
     <dl>
       <Field label="What to Observe">{data.what_to_observe}</Field>
       <Field label="Criteria">
-        <div className="space-y-4 mt-2">
+        <CriteriaStack>
           {data.criteria.map((c, i) => (
-            <div
-              key={i}
-              className="border border-gray-200 rounded-lg overflow-hidden"
-            >
-              <div className="bg-gray-50 px-4 py-2 font-semibold text-sm text-gray-800">
-                {c.criterion}
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-100">
-                <div className="px-4 py-3">
-                  <p className="text-xs font-semibold text-red-400 uppercase mb-1">
-                    Below Target
-                  </p>
-                  <p className="text-sm text-gray-600">
+            <CriterionCard key={i}>
+              <CriterionHeader>{c.criterion}</CriterionHeader>
+              <RubricGrid>
+                <RubricCell>
+                  <RubricLabel color="#f87171">Below Target</RubricLabel>
+                  <Typography type="body-sm" style={{ color: "#4b5563" }}>
                     {c.observable_indicators.below_target}
-                  </p>
-                </div>
-                <div className="px-4 py-3">
-                  <p className="text-xs font-semibold text-[var(--color-accent)] uppercase mb-1">
-                    At Target
-                  </p>
-                  <p className="text-sm text-gray-600">
+                  </Typography>
+                </RubricCell>
+                <RubricCell>
+                  <RubricLabel color="var(--color-accent)">At Target</RubricLabel>
+                  <Typography type="body-sm" style={{ color: "#4b5563" }}>
                     {c.observable_indicators.at_target}
-                  </p>
-                </div>
-                <div className="px-4 py-3">
-                  <p className="text-xs font-semibold text-green-500 uppercase mb-1">
-                    Above Target
-                  </p>
-                  <p className="text-sm text-gray-600">
+                  </Typography>
+                </RubricCell>
+                <RubricCell>
+                  <RubricLabel color="#22c55e">Above Target</RubricLabel>
+                  <Typography type="body-sm" style={{ color: "#4b5563" }}>
                     {c.observable_indicators.above_target}
-                  </p>
-                </div>
-              </div>
-              <div className="px-4 py-2 bg-amber-50 border-t border-gray-100">
-                <p className="text-xs text-amber-700">
-                  <span className="font-semibold">Coaching tip:</span>{" "}
-                  {c.coaching_tip}
-                </p>
-              </div>
-            </div>
+                  </Typography>
+                </RubricCell>
+              </RubricGrid>
+              <CoachingTip>
+                <strong>Coaching tip:</strong> {c.coaching_tip}
+              </CoachingTip>
+            </CriterionCard>
           ))}
-        </div>
+        </CriteriaStack>
       </Field>
       <Field label="Overall Feedback Guidance">
-        <p className="whitespace-pre-line">{data.overall_feedback_guidance}</p>
+        <p style={{ whiteSpace: "pre-line" }}>{data.overall_feedback_guidance}</p>
       </Field>
       <Field label="Debrief Questions">
-        <List items={data.debrief_questions} />
+        <BulletList items={data.debrief_questions} />
       </Field>
     </dl>
   );
 }
 
-export default function OutputDisplay({ result }) {
+/* ── Mode 2 views ── */
+
+function QuestionListView({ questions }) {
+  return (
+    <div>
+      {questions.map((q, i) => (
+        <QuestionCard key={i}>{q}</QuestionCard>
+      ))}
+    </div>
+  );
+}
+
+/* ── Mode 3 views ── */
+
+function TransferView({ data }) {
+  return (
+    <div>
+      {data.transfer_activities.map((ta, i) => (
+        <TransferCard key={i}>
+          <TransferTarget>
+            {ta.target_block_id} {ta.target_block_name}
+          </TransferTarget>
+          <MechBadgeRow>
+            {ta.shared_mechanisms.map((m) => (
+              <Badge key={m} type="info">{m}</Badge>
+            ))}
+          </MechBadgeRow>
+          <Field label="Activity">
+            <p style={{ whiteSpace: "pre-line" }}>{ta.activity}</p>
+          </Field>
+          <Field label="Rationale">
+            <p style={{ whiteSpace: "pre-line" }}>{ta.rationale}</p>
+          </Field>
+        </TransferCard>
+      ))}
+    </div>
+  );
+}
+
+/* ── section builder ── */
+
+function buildSections(result, mode) {
+  if (mode === "practice") {
+    const sections = [];
+    if (result.case_skeleton) {
+      sections.push({
+        key: "skeleton",
+        title: "Challenge Characteristics",
+        json: result.case_skeleton,
+        text: skeletonToText(result.case_skeleton),
+        view: <CaseSkeletonView data={result.case_skeleton} />,
+      });
+    }
+    if (result.proficiency_gap?.length) {
+      sections.push({
+        key: "gap",
+        title: "Proficiency Gap",
+        json: result.proficiency_gap,
+        text: proficiencyGapToText(result.proficiency_gap),
+        view: <ProficiencyGapView data={result.proficiency_gap} />,
+      });
+    }
+    if (result.practice_activity || result.scenario || result.assessment_rubric) {
+      const combinedJson = {
+        ...(result.practice_activity && { practice_activity: result.practice_activity }),
+        ...(result.scenario && { scenario: result.scenario }),
+        ...(result.assessment_rubric && { assessment_rubric: result.assessment_rubric }),
+      };
+      const textParts = [];
+      if (result.practice_activity) textParts.push(practiceToText(result.practice_activity));
+      if (result.scenario) textParts.push(scenarioToText(result.scenario));
+      if (result.assessment_rubric) textParts.push(rubricToText(result.assessment_rubric));
+
+      sections.push({
+        key: "activity",
+        title: "Example Activity and Rubrics",
+        json: combinedJson,
+        text: textParts.join("\n\n"),
+        view: (
+          <>
+            {result.practice_activity && (
+              <PracticeActivityView data={result.practice_activity} />
+            )}
+            {result.scenario && (
+              <>
+                <SubSectionTitle>Scenario — {result.scenario.title}</SubSectionTitle>
+                <ScenarioView data={result.scenario} />
+              </>
+            )}
+            {result.assessment_rubric && (
+              <>
+                <SubSectionTitle>Assessment Rubric — {result.assessment_rubric.title}</SubSectionTitle>
+                <RubricView data={result.assessment_rubric} />
+              </>
+            )}
+          </>
+        ),
+      });
+    }
+    return sections;
+  }
+
+  if (mode === "metacognition") {
+    return [
+      {
+        key: "self-assessment",
+        title: "Self-Assessment Questions",
+        json: result.self_assessment_questions,
+        text: result.self_assessment_questions.map((q) => `- ${q}`).join("\n"),
+        view: <QuestionListView questions={result.self_assessment_questions} />,
+      },
+      {
+        key: "reflection",
+        title: "Reflection Questions",
+        json: result.reflection_questions,
+        text: result.reflection_questions.map((q) => `- ${q}`).join("\n"),
+        view: <QuestionListView questions={result.reflection_questions} />,
+      },
+      {
+        key: "coaching",
+        title: "Coaching Questions",
+        json: result.coaching_questions,
+        text: result.coaching_questions.map((q) => `- ${q}`).join("\n"),
+        view: <QuestionListView questions={result.coaching_questions} />,
+      },
+    ];
+  }
+
+  if (mode === "transfer") {
+    return [
+      {
+        key: "mechanisms",
+        title: "Shared Mechanisms",
+        json: { summary: result.shared_mechanisms_summary },
+        text: result.shared_mechanisms_summary,
+        view: (
+          <Field label="Summary">
+            <p style={{ whiteSpace: "pre-line" }}>{result.shared_mechanisms_summary}</p>
+          </Field>
+        ),
+      },
+      {
+        key: "activities",
+        title: "Transfer Activities",
+        json: result.transfer_activities,
+        text: transferToText(result),
+        view: <TransferView data={result} />,
+      },
+    ];
+  }
+
+  return [];
+}
+
+/* ── main export ── */
+
+export default function OutputDisplay({ result, mode }) {
   if (!result) return null;
 
-  const { practice_activity, scenario, assessment_rubric } = result;
+  const sections = buildSections(result, mode);
 
   return (
-    <div className="space-y-4">
-      <Section
-        title={`Practice Activity — ${practice_activity.title}`}
-        jsonData={practice_activity}
-        textData={practiceToText(practice_activity)}
-      >
-        <PracticeActivityView data={practice_activity} />
-      </Section>
-
-      <Section
-        title={`Scenario — ${scenario.title}`}
-        jsonData={scenario}
-        textData={scenarioToText(scenario)}
-      >
-        <ScenarioView data={scenario} />
-      </Section>
-
-      <Section
-        title={`Assessment Rubric — ${assessment_rubric.title}`}
-        jsonData={assessment_rubric}
-        textData={rubricToText(assessment_rubric)}
-      >
-        <RubricView data={assessment_rubric} />
-      </Section>
-    </div>
+    <SectionStack>
+      {sections.map((sec) => (
+        <SectionCard key={sec.key}>
+          <SectionTitle>{sec.title}</SectionTitle>
+          <div style={{ padding: "16px 20px 20px" }}>
+            {sec.view}
+            <CopyButtons jsonData={sec.json} textData={sec.text} />
+          </div>
+        </SectionCard>
+      ))}
+    </SectionStack>
   );
 }

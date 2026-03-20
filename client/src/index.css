@@ -1,8 +1,19 @@
-@import "tailwindcss";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-@theme {
-  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+:root {
   --color-accent: #0f5da6;
   --color-accent-hover: #0d4e8c;
   --color-accent-light: #e8f0fa;
+}
+
+body {
+  font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f9fafb;
 }

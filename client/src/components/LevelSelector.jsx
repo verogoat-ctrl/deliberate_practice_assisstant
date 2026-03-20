@@ -1,36 +1,38 @@
+import styled from "@emotion/styled";
+import { Typography, Button } from "@mds/mds-reactjs-library";
+
+const Stack = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+`;
+
 export default function LevelSelector({ levels, selected, onChange }) {
   const items = levels?.levels || [];
 
   return (
     <div>
-      <label className="block text-sm font-semibold text-gray-700 mb-2">
-        Proficiency Level
-        <span className="ml-1 font-normal text-gray-400">(select 1)</span>
-      </label>
+      <Typography type="body-sm" component="label" style={{ fontWeight: 600, color: "#374151", marginBottom: 8, display: "block" }}>
+        Proficiency Level{" "}
+        <span style={{ fontWeight: 400, color: "#9ca3af" }}>(select 1)</span>
+      </Typography>
 
-      <div className="flex flex-col gap-1.5">
+      <Stack>
         {items.map((lvl) => {
           const active = selected?.level === lvl.level;
           return (
-            <button
+            <Button
               key={lvl.level}
-              type="button"
+              appearance={active ? "primary" : "secondary"}
+              size="md"
               onClick={() => onChange(lvl)}
-              className={`
-                w-full text-left px-3 py-2 rounded-lg text-sm transition-colors border
-                ${
-                  active
-                    ? "border-[var(--color-accent)] bg-[var(--color-accent-light)] text-[var(--color-accent)] font-semibold"
-                    : "border-gray-200 bg-white text-gray-600 hover:border-gray-300 hover:bg-gray-50"
-                }
-              `}
+              style={{ width: "100%", textAlign: "left", justifyContent: "flex-start" }}
             >
-              <span className="font-semibold">Level {lvl.level}:</span>{" "}
-              {lvl.name}
-            </button>
+              <strong>Level {lvl.level}:</strong>&nbsp;{lvl.name}
+            </Button>
           );
         })}
-      </div>
+      </Stack>
     </div>
   );
 }

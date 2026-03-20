@@ -1,44 +1,22 @@
+import { Button, CircularLoading } from "@mds/mds-reactjs-library";
+
 export default function GenerateButton({ disabled, loading, onClick }) {
   return (
-    <button
-      type="button"
+    <Button
+      appearance="primary"
+      size="lg"
       disabled={disabled || loading}
       onClick={onClick}
-      className={`
-        w-full py-3 rounded-lg text-sm font-semibold transition-colors
-        ${
-          disabled || loading
-            ? "bg-gray-200 text-gray-400 cursor-not-allowed"
-            : "bg-[var(--color-accent)] text-white hover:bg-[var(--color-accent-hover)] active:scale-[0.98]"
-        }
-      `}
+      style={{ width: "100%" }}
     >
       {loading ? (
-        <span className="flex items-center justify-center gap-2">
-          <svg
-            className="animate-spin h-4 w-4"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <circle
-              className="opacity-25"
-              cx="12"
-              cy="12"
-              r="10"
-              stroke="currentColor"
-              strokeWidth="4"
-            />
-            <path
-              className="opacity-75"
-              fill="currentColor"
-              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-            />
-          </svg>
+        <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <CircularLoading indeterminate size="xsm" />
           Generating…
         </span>
       ) : (
-        "Generate Practice Activity"
+        "Generate"
       )}
-    </button>
+    </Button>
   );
 }
